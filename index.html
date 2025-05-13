@@ -14,6 +14,9 @@
     <!-- Header with Navigation -->
     <header>
       <nav class="navbar">
+        <div class="menu-btn">
+          <span></span>
+        </div>
         <a href="#" class="logo">ДоброЛікар</a>
         <ul class="nav-links">
           <li><a href="#services">Послуги</a></li>
@@ -23,10 +26,8 @@
           <li><a href="#contact">Контакти</a></li>
         </ul>
         <a href="tel:+380441234567" class="phone">+38 (093) 123-45-67</a>
-        <div class="menu-btn">
-          <span>☰</span>
-        </div>
       </nav>
+      <div class="sidebar-overlay"></div>
     </header>
 
     <!-- Hero Section -->
@@ -34,7 +35,7 @@
       <div class="hero-content">
         <h1>Ваше здоров'я — наш пріоритет</h1>
         <p>
-          Приватна медична клініка MediPremium пропонує повний спектр медичних
+          Приватна медична клініка ДоброЛікар пропонує повний спектр медичних
           послуг найвищої якості для всієї вашої родини
         </p>
         <a href="#contact" class="btn">Записатися на прийом</a>
@@ -157,7 +158,7 @@
         <div class="about-text">
           <h2>Медицина преміум-класу</h2>
           <p>
-            Наша приватна клініка MediPremium пропонує медичні послуги найвищої
+            Наша приватна клініка ДоброЛікар пропонує медичні послуги найвищої
             якості. Ми об'єднали команду досвідчених лікарів та сучасне
             обладнання, щоб забезпечити вам найкраще медичне обслуговування.
           </p>
@@ -253,7 +254,7 @@
       <div class="testimonial-grid">
         <div class="testimonial">
           <p class="testimonial-text">
-            "Вже два роки обслуговуюсь у клініці MediPremium і надзвичайно
+            "Вже два роки обслуговуюсь у клініці ДоброЛікар і надзвичайно
             задоволена якістю послуг. Лікарі завжди уважні, а обладнання
             найсучасніше."
           </p>
@@ -262,22 +263,21 @@
         <div class="testimonial">
           <p class="testimonial-text">
             "Професійний підхід, швидке обслуговування та чудовий сервіс. Дякую
-            команді MediPremium за турботу про здоров'я моєї родини!"
+            команді ДоброЛікар за турботу про здоров'я моєї родини!"
           </p>
           <p class="testimonial-author">Сергій В.</p>
         </div>
         <div class="testimonial">
           <p class="testimonial-text">
-            "Завдяки комплексному обстеженню в MediPremium виявили проблему на
+            "Завдяки комплексному обстеженню в ДоброЛікар виявили проблему на
             ранній стадії. Лікарі клініки буквально врятували моє здоров'я."
           </p>
           <p class="testimonial-author">Ірина Д.</p>
         </div>
         <div class="testimonial">
           <p class="testimonial-text">
-            "Приємно, коли медицина поєднує високу якість та комфорт.
-            MediPremium — це саме така клініка. Рекомендую всім, хто цінує своє
-            здоров'я."
+            "Приємно, коли медицина поєднує високу якість та комфорт. ДоброЛікар
+            — це саме така клініка. Рекомендую всім, хто цінує своє здоров'я."
           </p>
           <p class="testimonial-author">Микола П.</p>
         </div>
@@ -369,13 +369,24 @@
     </footer>
 
     <script>
-      // Simple mobile menu toggle
+      // Mobile menu toggle
       document
         .querySelector(".menu-btn")
         .addEventListener("click", function () {
-          const navLinks = document.querySelector(".nav-links");
-          navLinks.style.display =
-            navLinks.style.display === "flex" ? "none" : "flex";
+          this.classList.toggle("active"); // Toggle active class on menu button
+          document.querySelector(".nav-links").classList.toggle("active");
+          document.querySelector(".sidebar-overlay").classList.toggle("active");
+          document.body.classList.toggle("sidebar-open");
+        });
+
+      // Close sidebar when clicking overlay
+      document
+        .querySelector(".sidebar-overlay")
+        .addEventListener("click", function () {
+          document.querySelector(".menu-btn").classList.remove("active"); // Remove active class from menu button
+          document.querySelector(".nav-links").classList.remove("active");
+          document.querySelector(".sidebar-overlay").classList.remove("active");
+          document.body.classList.remove("sidebar-open");
         });
 
       // Smooth scrolling for anchor links
@@ -391,17 +402,19 @@
             });
 
             // Close mobile menu if open
-            const navLinks = document.querySelector(".nav-links");
-            if (window.innerWidth <= 768) {
-              navLinks.style.display = "none";
-            }
+            document.querySelector(".menu-btn").classList.remove("active"); // Remove active class from menu button
+            document.querySelector(".nav-links").classList.remove("active");
+            document
+              .querySelector(".sidebar-overlay")
+              .classList.remove("active");
+            document.body.classList.remove("sidebar-open");
           }
         });
       });
     </script>
 
     <!-- ChatBot -->
-    <script type="module">
+    <!-- <script type="module">
       import Chatbot from "https://cdn.jsdelivr.net/npm/flowise-embed/dist/web.js";
       Chatbot.init({
         chatflowid: "2d0d25b2-416c-4334-957d-8e517ef536d5",
@@ -508,6 +521,6 @@
           },
         },
       });
-    </script>
+    </script> -->
   </body>
 </html>

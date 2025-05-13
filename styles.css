@@ -15,6 +15,7 @@ body {
 /* Header and Navigation */
 header {
   background-color: #fff;
+  padding: 1em 0;
   box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
   position: fixed;
   width: 100%;
@@ -67,6 +68,74 @@ header {
 .menu-btn {
   display: none;
   cursor: pointer;
+  font-size: 24px;
+  z-index: 1001;
+  width: 30px;
+  height: 25px;
+  position: relative;
+}
+
+.menu-btn span,
+.menu-btn span::before,
+.menu-btn span::after {
+  position: absolute;
+  width: 100%;
+  height: 3px;
+  background-color: #1e5f74;
+  transition: all 0.3s ease;
+}
+
+.menu-btn span {
+  top: 50%;
+  transform: translateY(-50%);
+}
+
+.menu-btn span::before,
+.menu-btn span::after {
+  content: "";
+  left: 0;
+}
+
+.menu-btn span::before {
+  top: -8px;
+}
+
+.menu-btn span::after {
+  bottom: -8px;
+}
+
+/* Transform to X when menu is active */
+.menu-btn.active span {
+  background-color: transparent;
+}
+
+.menu-btn.active span::before {
+  top: 0;
+  transform: rotate(45deg);
+}
+
+.menu-btn.active span::after {
+  bottom: 0;
+  transform: rotate(-45deg);
+}
+
+.sidebar-overlay {
+  display: none;
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: rgba(0, 0, 0, 0.5);
+  z-index: 998;
+}
+
+.sidebar-overlay.active {
+  display: block;
+}
+
+body.sidebar-open {
+  overflow: hidden;
 }
 
 /* Hero Section */
@@ -342,12 +411,46 @@ footer {
 }
 
 @media (max-width: 768px) {
-  .nav-links {
-    display: none;
+  .navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 20px;
   }
 
   .menu-btn {
     display: block;
+    order: -1; /* Move to the left */
+  }
+
+  .nav-links {
+    position: fixed;
+    top: 0;
+    left: -280px; /* Start off-screen */
+    width: 250px;
+    height: 100vh;
+    background-color: white;
+    display: flex;
+    flex-direction: column;
+    padding: 80px 20px 20px;
+    transition: left 0.3s ease;
+    z-index: 999;
+    box-shadow: 2px 0 10px rgba(0, 0, 0, 0.1);
+  }
+
+  .nav-links.active {
+    left: 0;
+  }
+
+  .nav-links li {
+    margin: 10px 0;
+  }
+
+  .nav-links a {
+    display: block;
+    padding: 10px 0;
+    font-size: 18px;
+    border-bottom: 1px solid #f2f2f2;
   }
 
   .about-content {
