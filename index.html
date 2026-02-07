@@ -1,11 +1,11 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="uk">
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Добролікар | Приватний медичний центр</title>
     <link
-      href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700&display=swap"
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap"
       rel="stylesheet"
     />
     <link rel="stylesheet" href="styles.css" />
@@ -16,6 +16,8 @@
       <nav class="navbar">
         <div class="menu-btn">
           <span></span>
+          <span></span>
+          <span></span>
         </div>
         <a href="#" class="logo">Добролікар</a>
         <ul class="nav-links">
@@ -25,7 +27,7 @@
           <li><a href="#testimonials">Відгуки</a></li>
           <li><a href="#contact">Контакти</a></li>
         </ul>
-        <a href="tel:+380441234567" class="phone">+38 (093) 930-73-74</a>
+        <a href="tel:+380939307374" class="phone">+38 (093) 930-73-74</a>
       </nav>
       <div class="sidebar-overlay"></div>
     </header>
@@ -33,9 +35,11 @@
     <!-- Hero Section -->
     <section class="hero">
       <div class="hero-content">
-        <h1>Ваше здоров'я - наш пріоритет!</h1>
-        <p>
-          Приватний медичний центр "Добролікар" - це вузькоспеціалізована клініка лікування захворюваню вуха, горла, носа та очей для дорослих та дітей.
+        <h1 id="hero-title">Ваше здоров'я - наш пріоритет!</h1>
+        <p id="hero-description">
+          Приватний медичний центр "Добролікар" - це вузькоспеціалізована
+          клініка лікування захворювань вуха, горла, носа та очей для дорослих
+          та дітей.
         </p>
         <a href="#contact" class="btn">Записатися на прийом</a>
       </div>
@@ -45,95 +49,92 @@
     <section id="services" class="section">
       <h2 class="section-title">Наші послуги</h2>
       <div class="services-grid">
+        <div class="service-card">
+          <div class="service-img">
+            <img src="images/dob_2.jpg" alt="Оптика" />
+          </div>
+          <div class="service-content">
+            <h3 id="service-glass-title">Оптика</h3>
+            <p id="service-glass-description">
+              Підбір окулярів для корекції зору, сонцезахисних окулярів, лінзи,
+              окуляри з комп'ютерним захистом
+            </p>
+          </div>
+        </div>
+
+        <div class="service-card">
+          <div class="service-img">
+            <img src="images/dob_3.jpg" alt="Офтальмолог" />
+          </div>
+          <div class="service-content">
+            <h3 id="service-ophthalmology-title">Консультація офтальмолога</h3>
+            <p id="service-ophthalmology-description">
+              Комплексна діагностика зору, лікування захворювань очей, підбір
+              окулярів та контактних лінз для дорослих та дітей.
+            </p>
+          </div>
+        </div>
+
+        <div class="service-card">
+          <div class="service-img">
+            <img src="images/dob_1.jpg" alt="Слухові апарати" />
+          </div>
+          <div class="service-content">
+            <h3 id="service-hearing-title">Слухові апарати</h3>
+            <p id="service-hearing-description">
+              Діагностика слуху, слухопротезування, підбір слухових апаратів
+              дітям та дорослим, комп'ютерне програмування слухових апаратів,
+              виготовлення вкладок та берушей.
+            </p>
+          </div>
+        </div>
 
         <div class="service-card">
           <div class="service-img">
             <img
-              src="assets/dob_2.jpg"
-              alt="Діагностика"
-              style="width: 100%; height: 100%; object-fit: cover"
+              src="images/arseny-togulev-DE6rYp1nAho-unsplash.jpg"
+              alt="Сурдолог"
             />
           </div>
           <div class="service-content">
-            <h3>Оптика</h3>
-            <p>
-              Підбір окулярів для корекції зору, сонцезахисних окулярів, лінзи, окуляри з комп'ютерним захистом
+            <h3 id="service-surdology-title">Консультація сурдолога</h3>
+            <p id="service-surdology-description">
+              Широкий спектр діагностичних та лікувальних процедур для виявлення
+              та корекції порушень слуху у дорослих та дітей.
             </p>
           </div>
         </div>
-        
+
         <div class="service-card">
           <div class="service-img">
             <img
-              src="assets/dob_3.jpg"
-              alt="Спеціалісти"
-              style="width: 100%; height: 100%; object-fit: cover"
+              src="images/cdc-POwT5nUEfdM-unsplash.jpg"
+              alt="Отоларинголог"
             />
           </div>
           <div class="service-content">
-            <h3>Консультація офтальмолога</h3>
-            <p>
-              ...
+            <h3 id="service-otolaryngology-title">
+              Консультація отоларинголога
+            </h3>
+            <p id="service-otolaryngology-description">
+              Діагностика та лікування захворювань вуха, горла та носа. Сучасне
+              обладнання та ефективні методи лікування.
             </p>
           </div>
         </div>
-        
+
         <div class="service-card">
           <div class="service-img">
             <img
-              src="assets/dob_1.jpg"
-              alt="Терапія"
-              style="width: 100%; height: 100%; object-fit: cover"
+              src="images/benyamin-bohlouli-e7MJLM5VGjY-unsplash.jpg"
+              alt="Алерголог"
             />
           </div>
           <div class="service-content">
-            <h3>Слухові апарати</h3>
-            <p>
-              Діагностика слуху, слухопротезування, підбір слухових апаратів дітям та дорослим, комп'ютерне програмування слухових апаратів, виготовлення вкладок та берушей.
-            </p>
-          </div>
-        </div>
-        
-        <div class="service-card">
-          <div class="service-img">
-            <img
-              src="assets/arseny-togulev-DE6rYp1nAho-unsplash.jpg"
-              alt="Процедури"
-              style="width: 100%; height: 100%; object-fit: cover"
-            />
-          </div>
-          <div class="service-content">
-            <h3>Консультація сурдолога</h3>
-            <p>Широкий спектр ...</p>
-          </div>
-        </div>
-        <div class="service-card">
-          <div class="service-img">
-            <img
-              src="assets/cdc-POwT5nUEfdM-unsplash.jpg"
-              alt="Аналізи"
-              style="width: 100%; height: 100%; object-fit: cover"
-            />
-          </div>
-          <div class="service-content">
-            <h3>Консультація отоларинголога</h3>
-            <p>
-              ...
-            </p>
-          </div>
-        </div>
-        <div class="service-card">
-          <div class="service-img">
-            <img
-              src="assets/benyamin-bohlouli-e7MJLM5VGjY-unsplash.jpg"
-              alt="Програми"
-              style="width: 100%; height: 100%; object-fit: cover"
-            />
-          </div>
-          <div class="service-content">
-            <h3>Консультація алерголога</h3>
-            <p>
-              ...
+            <h3 id="service-allergology-title">Консультація алерголога</h3>
+            <p id="service-allergology-description">
+              Діагностика алергічних захворювань, проведення алергопроб,
+              розробка індивідуальних схем лікування та профілактики.
             </p>
           </div>
         </div>
@@ -146,41 +147,45 @@
       <div class="about-content">
         <div class="about-img">
           <img
-            src="assets/benyamin-bohlouli-e7MJLM5VGjY-unsplash.jpg"
+            src="images/benyamin-bohlouli-e7MJLM5VGjY-unsplash.jpg"
             alt="Про нашу клініку"
-            style="
-              width: 100%;
-              height: 100%;
-              object-fit: cover;
-              border-radius: 10px;
-            "
           />
         </div>
         <div class="about-text">
-          <h2>Медицина преміум-класу</h2>
-          <p>Медичний центр «Добролікар» - простір #добролікарів та #добропацієнтів
-Це вузькоспеціалізована клініка лікування захворювань вуха,горла,носа та очей для дорослих та дітей!
-Підбір слухових апаратів та окулярів</p>
+          <h2 id="about-title">Медицина преміум-класу</h2>
+          <p id="about-description">
+            Медичний центр «Добролікар» — простір добролікарів та
+            добропацієнтів. Це вузькоспеціалізована клініка лікування
+            захворювань вуха, горла, носа та очей для дорослих та дітей. Підбір
+            слухових апаратів та окулярів.
+          </p>
 
-<p>Місце,де починають краще бачити,чути та дихати!</p>
+          <p id="about-highlight-text" class="highlight-text">
+            Місце, де починають краще бачити, чути та дихати!
+          </p>
 
-<ol>Наші  дорослі та дитячі #добролікарі:
-  <li>ЛОР(вухо,горло,ніс)</li>
-  <li>Офтальмолог(Очі та підбір окулярів)</li>
-<li>Алерголог(Алергія)</li>
-<li>Сурдолог(Слух та слухові апарати)</li>
+          <h3 id="about-doctors-title">Наші дорослі та дитячі лікарі</h3>
+          <ol id="about-doctors-list">
+            <li>Отоларинголог (вухо, горло, ніс)</li>
+            <li>Офтальмолог (очі та підбір окулярів)</li>
+            <li>Алерголог (алергія)</li>
+            <li>Сурдолог (слух та слухові апарати)</li>
+          </ol>
 
-<p>#добрООптика:
--окуляри для корекції зору
--сонцезахисні окуляри
--лінзи
--окуляри з компʼютерним захистом
-</p>
+          <h3>Оптика</h3>
+          <ul>
+            <li>Окуляри для корекції зору</li>
+            <li>Сонцезахисні окуляри</li>
+            <li>Лінзи</li>
+            <li>Окуляри з комп'ютерним захистом</li>
+          </ul>
 
-<p>Слухові апарати:
--внутрішньоканальні
--завушні
-</p>
+          <h3>Слухові апарати</h3>
+          <ul>
+            <li>Внутрішньоканальні</li>
+            <li>Завушні</li>
+          </ul>
+
           <a href="#contact" class="btn">Дізнатися більше</a>
         </div>
       </div>
@@ -192,121 +197,115 @@
       <div class="team-grid">
         <div class="team-member">
           <div class="team-photo">
-            <img
-              src="assets/doc-2.png"
-              alt="Лікар"
-              style="
-                width: 100%;
-                height: 100%;
-                object-fit: cover;
-                border-radius: 50%;
-              "
-            />
+            <img src="images/doc-2.png" alt="Олена Петренко" />
           </div>
           <h3 class="team-name">Олена Петренко</h3>
           <p class="team-role">Головний лікар, терапевт</p>
         </div>
+
         <div class="team-member">
           <div class="team-photo">
-            <img
-              src="assets/doc-3.png"
-              alt="Лікар"
-              style="
-                width: 100%;
-                height: 100%;
-                object-fit: cover;
-                border-radius: 50%;
-              "
-            />
+            <img src="images/doc-3.png" alt="Михайло Коваленко" />
           </div>
-          <h3 class="team-name">Андрій Ковальчук</h3>
-          <p class="team-role">Кардіолог</p>
+          <h3 class="team-name">Михайло Коваленко</h3>
+          <p class="team-role">Отоларинголог</p>
         </div>
+
         <div class="team-member">
           <div class="team-photo">
-            <img
-              src="assets/doc-4.png"
-              alt="Лікар"
-              style="
-                width: 100%;
-                height: 100%;
-                object-fit: cover;
-                border-radius: 50%;
-              "
-            />
+            <img src="images/doc-1.png" alt="Анна Шевченко" />
           </div>
-          <h3 class="team-name">Марія Шевченко</h3>
-          <p class="team-role">Невролог</p>
+          <h3 class="team-name">Анна Шевченко</h3>
+          <p class="team-role">Офтальмолог</p>
         </div>
+
         <div class="team-member">
           <div class="team-photo">
-            <img
-              src="assets/doc-1.png"
-              alt="Лікар"
-              style="
-                width: 100%;
-                height: 100%;
-                object-fit: cover;
-                border-radius: 50%;
-              "
-            />
+            <img src="images/doc-4.png" alt="Ігор Мельник" />
           </div>
-          <h3 class="team-name">Віктор Мельник</h3>
-          <p class="team-role">Гастроентеролог</p>
+          <h3 class="team-name">Ігор Мельник</h3>
+          <p class="team-role">Сурдолог</p>
         </div>
       </div>
     </section>
 
     <!-- Testimonials Section -->
-    <section id="testimonials" class="section testimonials">
-      <h2 class="section-title">Відгуки пацієнтів</h2>
-      <div class="testimonial-grid">
-        <div class="testimonial">
+    <section id="testimonials" class="section">
+      <h2 class="section-title">Відгуки наших пацієнтів</h2>
+      <div class="testimonials-grid">
+        <div class="testimonial-card">
           <p class="testimonial-text">
-            "Вже два роки обслуговуюсь у клініці ДоброЛікар і надзвичайно
-            задоволена якістю послуг. Лікарі завжди уважні, а обладнання
-            найсучасніше."
+            Дуже задоволена обслуговуванням у клініці! Лікарі професійні, уважні
+            до пацієнтів. Сучасне обладнання та комфортна атмосфера. Рекомендую
+            всім!
           </p>
-          <p class="testimonial-author">Оксана К.</p>
+          <div class="testimonial-author">
+            <div class="author-photo">
+              <img src="images/patient-1.jpg" alt="Марія Іваненко" />
+            </div>
+            <div class="author-info">
+              <h4>Марія Іваненко</h4>
+              <div class="rating">★★★★★</div>
+            </div>
+          </div>
         </div>
-        <div class="testimonial">
+
+        <div class="testimonial-card">
           <p class="testimonial-text">
-            "Професійний підхід, швидке обслуговування та чудовий сервіс. Дякую
-            команді ДоброЛікар за турботу про здоров'я моєї родини!"
+            Звернувся до офтальмолога з проблемою зору. Отримав кваліфіковану
+            консультацію, підібрали ідеальні окуляри. Дякую за професіоналізм!
           </p>
-          <p class="testimonial-author">Сергій В.</p>
+          <div class="testimonial-author">
+            <div class="author-photo">
+              <img src="images/patient-2.jpg" alt="Андрій Петров" />
+            </div>
+            <div class="author-info">
+              <h4>Андрій Петров</h4>
+              <div class="rating">★★★★★</div>
+            </div>
+          </div>
         </div>
-        <div class="testimonial">
+
+        <div class="testimonial-card">
           <p class="testimonial-text">
-            "Завдяки комплексному обстеженню в ДоброЛікар виявили проблему на
-            ранній стадії. Лікарі клініки буквально врятували моє здоров'я."
+            Вперше відвідала клініку з дитиною. Лікарі знайшли підхід до малечі,
+            все пояснили доступно. Тепер тільки сюди!
           </p>
-          <p class="testimonial-author">Ірина Д.</p>
-        </div>
-        <div class="testimonial">
-          <p class="testimonial-text">
-            "Приємно, коли медицина поєднує високу якість та комфорт. ДоброЛікар
-            — це саме така клініка. Рекомендую всім, хто цінує своє здоров'я."
-          </p>
-          <p class="testimonial-author">Микола П.</p>
+          <div class="testimonial-author">
+            <div class="author-photo">
+              <img src="images/patient-3.jpg" alt="Оксана Ткаченко" />
+            </div>
+            <div class="author-info">
+              <h4>Оксана Ткаченко</h4>
+              <div class="rating">★★★★★</div>
+            </div>
+          </div>
         </div>
       </div>
     </section>
 
     <!-- Contact Section -->
-    <section id="contact" class="section contact">
+    <section id="contact" class="section">
       <h2 class="section-title">Зв'язатися з нами</h2>
       <div class="contact-content">
         <div class="contact-info">
           <h3>Наші контакти</h3>
           <p><strong>Адреса:</strong> м. Львів, вул. Янева, 25</p>
-          <p><strong>Телефон:</strong> +38 (093) 123-45-67</p>
-          <p><strong>Email:</strong> info@dobrolikar.ua</p>
+          <p>
+            <strong>Телефон:</strong>
+            <a href="tel:+380931234567">+38 (093) 930-73-74</a>
+          </p>
+          <p>
+            <strong>Email:</strong>
+            <a href="mailto:info@dobrolikar.ua">info@dobrolikar.ua</a>
+          </p>
+
           <h3>Графік роботи:</h3>
           <p>Пн-Пт: 8:00 - 20:00</p>
           <p>Сб: 9:00 - 18:00</p>
           <p>Нд: 10:00 - 16:00</p>
         </div>
+
         <div class="contact-form">
           <h3>Запишіться на прийом</h3>
           <form action="#" method="POST">
@@ -345,16 +344,17 @@
     <footer>
       <div class="footer-content">
         <div class="footer-column">
-          <h3>DobroLikar</h3>
-          <p>🩺 Медичний центр для дітей та дорослих</p>
+          <h3>Добролікар</h3>
+          <p>Медичний центр для дітей та дорослих</p>
           <ul class="footer-services">
-            <li>Отоларинголог(Лор)</li>
+            <li>Отоларинголог (ЛОР)</li>
             <li>Офтальмолог</li>
-            <li>Сімейний лікар</li>
-            <li>Педіатр</li>
+            <li>Сурдолог</li>
+            <li>Алерголог</li>
           </ul>
           <h3>Тут добрі лікарі!</h3>
         </div>
+
         <div class="footer-column">
           <h3>Меню</h3>
           <ul class="footer-links">
@@ -365,15 +365,17 @@
             <li><a href="#contact">Контакти</a></li>
           </ul>
         </div>
+
         <div class="footer-column">
           <h3>Контакти</h3>
           <p>м. Львів, вул. Янева, 25</p>
-          <p>+38 (093) 123-45-67</p>
+          <p>+38 (093) 930-73-74</p>
           <p>info@dobrolikar.ua</p>
         </div>
       </div>
+
       <div class="copyright">
-        <p>&copy; 2025 Dobrolikar. Всі права захищені.</p>
+        <p>&copy; 2025 Добролікар. Всі права захищені.</p>
       </div>
     </footer>
 
@@ -382,7 +384,7 @@
       document
         .querySelector(".menu-btn")
         .addEventListener("click", function () {
-          this.classList.toggle("active"); // Toggle active class on menu button
+          this.classList.toggle("active");
           document.querySelector(".nav-links").classList.toggle("active");
           document.querySelector(".sidebar-overlay").classList.toggle("active");
           document.body.classList.toggle("sidebar-open");
@@ -392,7 +394,7 @@
       document
         .querySelector(".sidebar-overlay")
         .addEventListener("click", function () {
-          document.querySelector(".menu-btn").classList.remove("active"); // Remove active class from menu button
+          document.querySelector(".menu-btn").classList.remove("active");
           document.querySelector(".nav-links").classList.remove("active");
           document.querySelector(".sidebar-overlay").classList.remove("active");
           document.body.classList.remove("sidebar-open");
@@ -402,7 +404,6 @@
       document.querySelectorAll('a[href^="#"]').forEach((anchor) => {
         anchor.addEventListener("click", function (e) {
           e.preventDefault();
-
           const target = document.querySelector(this.getAttribute("href"));
           if (target) {
             window.scrollTo({
@@ -411,7 +412,7 @@
             });
 
             // Close mobile menu if open
-            document.querySelector(".menu-btn").classList.remove("active"); // Remove active class from menu button
+            document.querySelector(".menu-btn").classList.remove("active");
             document.querySelector(".nav-links").classList.remove("active");
             document
               .querySelector(".sidebar-overlay")
@@ -421,115 +422,5 @@
         });
       });
     </script>
-
-    <!-- ChatBot -->
-    <!-- <script type="module">
-      import Chatbot from "https://cdn.jsdelivr.net/npm/flowise-embed/dist/web.js";
-      Chatbot.init({
-        chatflowid: "2d0d25b2-416c-4334-957d-8e517ef536d5",
-        apiHost: "http://localhost:3000",
-        chatflowConfig: {
-          /* Chatflow Config */
-        },
-        observersConfig: {
-          /* Observers Config */
-        },
-        theme: {
-          button: {
-            backgroundColor: "#02577d",
-            right: 20,
-            bottom: 20,
-            size: 48,
-            dragAndDrop: true,
-            iconColor: "white",
-            customIconSrc:
-              "https://raw.githubusercontent.com/walkxcode/dashboard-icons/main/svg/google-messages.svg",
-            autoWindowOpen: {
-              autoOpen: true,
-              openDelay: 2,
-              autoOpenOnMobile: false,
-            },
-          },
-          tooltip: {
-            showTooltip: true,
-            tooltipMessage: "Помічник 👋!",
-            tooltipBackgroundColor: "#02577d",
-            tooltipTextColor: "white",
-            tooltipFontSize: 16,
-          },
-          // disclaimer: {
-          //   title: "Disclaimer",
-          //   message:
-          //     'By using this chatbot, you agree to the <a target="_blank" href="https://flowiseai.com/terms">Terms & Condition</a>',
-          //   textColor: "black",
-          //   buttonColor: "#3b82f6",
-          //   buttonText: "Start Chatting",
-          //   buttonTextColor: "white",
-          //   blurredBackgroundColor: "rgba(0, 0, 0, 0.4)",
-          //   backgroundColor: "white",
-          // },
-          customCSS: ``,
-          chatWindow: {
-            showTitle: true,
-            showAgentMessages: true,
-            title: "Вас вітає ДоброЛікар!",
-            titleAvatarSrc: "assets/dobrolikar_logo.png",
-            welcomeMessage: "Привіт! Чим я можу допомогти?",
-            errorMessage: "This is a custom error message",
-            backgroundColor: "#ffffff",
-            backgroundImage: "enter image path or link",
-            height: 700,
-            width: 400,
-            fontSize: 16,
-            starterPrompts: [],
-            starterPromptFontSize: 15,
-            clearChatOnReload: false,
-            sourceDocsTitle: "Sources:",
-            renderHTML: true,
-            botMessage: {
-              backgroundColor: "#f7f8ff",
-              textColor: "#303235",
-              showAvatar: true,
-              // avatarSrc: "https://api.dicebear.com/9.x/bottts/svg?seed=Caleb",
-              avatarSrc: "assets/bottts-1745761015167.png",
-            },
-            userMessage: {
-              backgroundColor: "#3B81F6",
-              textColor: "#ffffff",
-              showAvatar: true,
-              avatarSrc:
-                "https://raw.githubusercontent.com/zahidkhawaja/langchain-chat-nextjs/main/public/usericon.png",
-            },
-            textInput: {
-              placeholder: "Задайтепитання",
-              backgroundColor: "#ffffff",
-              textColor: "#303235",
-              sendButtonColor: "#3B81F6",
-              maxChars: 50,
-              maxCharsWarningMessage:
-                "Ви перевищили ліміт символів - має бути не більше 50.",
-              autoFocus: true,
-              sendMessageSound: true,
-              sendSoundLocation: "send_message.mp3",
-              receiveMessageSound: true,
-              receiveSoundLocation: "receive_message.mp3",
-            },
-            feedback: {
-              color: "#303235",
-            },
-            dateTimeToggle: {
-              date: true,
-              time: true,
-            },
-            footer: {
-              textColor: "#777",
-              text: "Powered by",
-              company: "Ihor Anosov",
-              // companyLink: "https://flowiseai.com",
-            },
-          },
-        },
-      });
-    </script> -->
   </body>
 </html>
