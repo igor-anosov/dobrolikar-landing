@@ -35,16 +35,16 @@ header {
   top: 0;
   left: 0;
   right: 0;
-  background: rgba(255, 255, 255, 0.98);
+  background: linear-gradient(135deg, var(--primary-color), #0f4a5e);
   backdrop-filter: blur(10px);
   z-index: 1000;
-  box-shadow: 0 2px 20px rgba(0, 0, 0, 0.05);
+  box-shadow: 0 2px 20px rgba(0, 0, 0, 0.15);
 }
 
 .navbar {
   max-width: 1400px;
   margin: 0 auto;
-  padding: 1.2rem 2rem;
+  padding: 0.2rem 2rem;
   display: flex;
   align-items: center;
   justify-content: space-between;
@@ -57,10 +57,18 @@ header {
   color: var(--primary-color);
   text-decoration: none;
   transition: color 0.3s;
+  display: flex;
+  align-items: center;
+}
+
+.logo img {
+  height: 100px;
+  width: auto;
+  display: block;
 }
 
 .logo:hover {
-  color: var(--secondary-color);
+  opacity: 0.8;
 }
 
 .nav-links {
@@ -72,7 +80,7 @@ header {
 
 .nav-links a {
   text-decoration: none;
-  color: var(--text-dark);
+  color: var(--white);
   font-weight: 500;
   font-size: 0.95rem;
   transition: color 0.3s;
@@ -86,16 +94,12 @@ header {
   left: 0;
   width: 0;
   height: 2px;
-  background: linear-gradient(
-    90deg,
-    var(--primary-color),
-    var(--secondary-color)
-  );
+  background: var(--secondary-color);
   transition: width 0.3s;
 }
 
 .nav-links a:hover {
-  color: var(--primary-color);
+  color: var(--secondary-color);
 }
 
 .nav-links a:hover::after {
@@ -103,19 +107,19 @@ header {
 }
 
 .phone {
-  color: var(--primary-color);
+  color: var(--white);
   text-decoration: none;
   font-weight: 600;
   font-size: 1.05rem;
   padding: 0.6rem 1.5rem;
-  border: 2px solid var(--primary-color);
+  border: 2px solid var(--white);
   border-radius: 50px;
   transition: all 0.3s;
 }
 
 .phone:hover {
-  background: var(--primary-color);
-  color: var(--white);
+  background: var(--white);
+  color: var(--primary-color);
 }
 
 .menu-btn {
@@ -124,18 +128,22 @@ header {
   gap: 5px;
   cursor: pointer;
   z-index: 1001;
+  width: 25px;
+  height: 20px;
+  justify-content: center;
 }
 
 .menu-btn span {
   width: 25px;
   height: 3px;
-  background: var(--primary-color);
+  background: var(--white);
   border-radius: 3px;
-  transition: all 0.3s;
+  transition: all 0.3s ease;
+  transform-origin: center;
 }
 
 .menu-btn.active span:nth-child(1) {
-  transform: rotate(45deg) translate(7px, 7px);
+  transform: rotate(45deg) translateY(11px);
 }
 
 .menu-btn.active span:nth-child(2) {
@@ -143,7 +151,7 @@ header {
 }
 
 .menu-btn.active span:nth-child(3) {
-  transform: rotate(-45deg) translate(7px, -7px);
+  transform: rotate(-45deg) translateY(-11px);
 }
 
 .sidebar-overlay {
@@ -154,7 +162,7 @@ header {
   right: 0;
   bottom: 0;
   background: rgba(0, 0, 0, 0.5);
-  z-index: 999;
+  z-index: 997;
   opacity: 0;
   transition: opacity 0.3s;
 }
@@ -333,24 +341,40 @@ header {
   margin: 0 auto;
   display: grid;
   grid-template-columns: 1fr 1fr;
-  gap: 4rem;
-  align-items: center;
+  gap: 0;
+  align-items: stretch;
   background: var(--white);
   border-radius: 20px;
-  padding: 3rem;
+  overflow: hidden;
   box-shadow: var(--shadow);
 }
 
 .about-img {
-  border-radius: 15px;
-  overflow: hidden;
-  box-shadow: 0 5px 20px rgba(0, 0, 0, 0.1);
+  background: url("images/benyamin-bohlouli-e7MJLM5VGjY-unsplash.jpg");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  filter: blur(3px);
+  position: relative;
+  min-height: 250px;
+}
+
+.about-img::after {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background: rgba(26, 95, 122, 0.1);
 }
 
 .about-img img {
   width: 100%;
-  height: auto;
+  height: 100%;
   display: block;
+  object-fit: cover;
+}
+
+.about-text {
+  padding: 3rem;
 }
 
 .about-text h2 {
@@ -438,6 +462,34 @@ header {
     var(--secondary-color)
   );
   color: var(--white);
+}
+
+/* Mobile Responsive - About Section */
+@media (max-width: 768px) {
+  .about-content {
+    grid-template-columns: 1fr;
+    border-radius: 15px;
+  }
+
+  .about-img {
+    height: 250px;
+  }
+
+  .about-text {
+    padding: 2rem;
+  }
+
+  .about-text h2 {
+    font-size: 1.5rem;
+  }
+
+  .about-text p {
+    font-size: 0.95rem;
+  }
+
+  .about-text h3 {
+    font-size: 1.2rem;
+  }
 }
 
 /* Team Section */
@@ -720,10 +772,29 @@ footer {
     height: 100vh;
     background: var(--white);
     flex-direction: column;
-    padding: 6rem 2rem 2rem;
+    padding: 7rem 2rem 2rem;
     box-shadow: -5px 0 20px rgba(0, 0, 0, 0.1);
     transition: right 0.3s;
     gap: 1.5rem;
+    z-index: 998;
+  }
+
+  .nav-links::before {
+    content: "";
+    position: absolute;
+    top: 1rem;
+    right: 1rem;
+    width: 150px;
+    height: 85px;
+    background: url("images/logo_blue.png") center/contain no-repeat;
+  }
+
+  .nav-links a {
+    color: var(--text-dark);
+  }
+
+  .nav-links a:hover {
+    color: var(--primary-color);
   }
 
   .nav-links.active {
@@ -732,6 +803,10 @@ footer {
 
   .menu-btn {
     display: flex;
+  }
+
+  .menu-btn span {
+    background: var(--white);
   }
 
   .sidebar-overlay {
