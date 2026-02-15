@@ -336,6 +336,242 @@ header {
   border-radius: 2px;
 }
 
+/* Bento Grid */
+
+.bento-grid {
+  max-width: 1400px;
+  margin: 0 auto;
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 1.5rem;
+  grid-auto-rows: minmax(180px, auto);
+}
+
+.bento-card {
+  background: var(--white);
+  border-radius: 24px;
+  padding: 2rem;
+  box-shadow: var(--shadow);
+  transition: all 0.3s ease;
+  display: flex;
+  flex-direction: column;
+}
+
+.bento-card:hover {
+  box-shadow: var(--shadow-hover);
+}
+
+.bento-move:hover {
+  transform: translateY(-5px);
+}
+
+/* Grid Layout */
+.bento-image {
+  grid-column: span 2;
+  grid-row: span 3;
+  padding: 0;
+  overflow: hidden;
+  background:
+    /* linear-gradient(135deg, rgba(26, 95, 122, 0.3), rgba(46, 204, 113, 0.3)), */
+    url("images/interior-clinic-2.JPG") center/cover;
+}
+
+.bento-intro {
+  grid-column: span 2;
+  grid-row: span 2;
+}
+
+.bento-optics {
+  grid-column: span 2;
+  padding: 0;
+  overflow: hidden;
+}
+
+.bento-optics-image {
+  width: 100%;
+  height: 180px;
+  background:
+    linear-gradient(135deg, rgba(26, 95, 122, 0.2), rgba(46, 204, 113, 0.2)),
+    url("https://images.unsplash.com/photo-1629909613654-28e377c37b09?w=800&q=80")
+      center/cover;
+}
+
+.bento-optics-content {
+  padding: 2rem;
+}
+
+.bento-doctors {
+  grid-column: span 2;
+}
+
+.bento-hearing {
+  grid-column: span 2;
+}
+
+.bento-cta {
+  grid-column: span 4;
+  background: linear-gradient(
+    135deg,
+    var(--primary-color),
+    var(--secondary-color)
+  );
+  color: var(--white);
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+
+/* Typography */
+.bento-card h2 {
+  font-size: 1.8rem;
+  color: var(--primary-color);
+  margin-bottom: 1rem;
+  font-weight: 600;
+  line-height: 1.3;
+}
+
+.bento-card h3 {
+  font-size: 1.3rem;
+  color: var(--primary-color);
+  margin-bottom: 1rem;
+  font-weight: 600;
+}
+
+.bento-cta h3 {
+  color: var(--white);
+  font-size: 1.5rem;
+}
+
+.bento-card p {
+  font-size: 1rem;
+  color: var(--text-light);
+  line-height: 1.7;
+  margin-bottom: 0.8rem;
+}
+
+.bento-cta p {
+  color: rgba(255, 255, 255, 0.9);
+  margin-bottom: 1.5rem;
+}
+
+.highlight-text {
+  font-style: italic;
+  color: var(--secondary-color);
+  font-weight: 500;
+}
+
+/* Lists */
+.bento-card ul,
+.bento-card ol {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.bento-card li {
+  padding: 0.4rem 0 0.4rem 1.2rem;
+  position: relative;
+  color: var(--text-light);
+  font-size: 0.95rem;
+  line-height: 1.6;
+}
+
+.bento-card li::before {
+  content: "•";
+  position: absolute;
+  left: 0;
+  color: var(--secondary-color);
+  font-size: 1.2rem;
+  line-height: 1.2;
+}
+
+.bento-card ol {
+  counter-reset: item;
+}
+
+.bento-card ol li::before {
+  content: counter(item) ".";
+  counter-increment: item;
+  font-size: 0.95rem;
+  font-weight: 600;
+}
+
+/* Button */
+.btn {
+  display: inline-block;
+  padding: 0.9rem 2rem;
+  background: var(--white);
+  color: var(--primary-color);
+  text-decoration: none;
+  border-radius: 50px;
+  font-weight: 600;
+  font-size: 1rem;
+  transition: all 0.3s;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+  width: auto;
+}
+
+.btn:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 6px 20px rgba(0, 0, 0, 0.15);
+  background: var(--bg-light);
+}
+
+/* Responsive */
+@media (max-width: 968px) {
+  .bento-grid {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 1rem;
+  }
+
+  .bento-image {
+    grid-column: span 2;
+    grid-row: span 2;
+  }
+
+  .bento-intro {
+    grid-column: span 2;
+  }
+
+  .bento-optics,
+  .bento-doctors,
+  .bento-hearing,
+  .bento-cta {
+    grid-column: span 2;
+  }
+
+  .section-title {
+    font-size: 2rem;
+  }
+}
+
+@media (max-width: 640px) {
+  .bento-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .bento-image,
+  .bento-intro,
+  .bento-optics,
+  .bento-doctors,
+  .bento-hearing,
+  .bento-cta {
+    grid-column: span 1;
+  }
+
+  .bento-image {
+    grid-row: span 2;
+  }
+
+  .bento-card {
+    padding: 1.5rem;
+  }
+
+  .section {
+    padding: 2rem 1rem;
+  }
+}
+
 /* Services Grid */
 .services-grid {
   max-width: 1400px;
