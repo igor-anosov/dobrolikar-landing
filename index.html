@@ -3,428 +3,1132 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Добролікар | Приватний медичний центр</title>
+
+    <title>
+      Добролікар | Приватний медичний центр у Львові — ЛОР, офтальмологія,
+      алергологія, слух
+    </title>
+    <meta
+      name="description"
+      content="Медичний центр «Добролікар» у Львові — вузькоспеціалізована клініка лікування захворювань вуха, горла, носа та очей для дорослих і дітей. Запис онлайн без черг. вул. Янева, 25."
+    />
+    <meta
+      name="keywords"
+      content="добролікар, медичний центр львів, лор львів, офтальмолог львів, алерголог львів, сурдолог львів, слухові апарати львів, оптика львів, дитячий лор, приватна клініка львів"
+    />
+    <meta name="author" content="Медичний центр Добролікар" />
+    <meta name="robots" content="index, follow" />
+    <meta name="theme-color" content="#0a9e9e" />
+    <link rel="canonical" href="https://dobrolikar.ua/" />
+
+    <!-- Open Graph -->
+    <meta property="og:type" content="website" />
+    <meta property="og:url" content="https://dobrolikar.ua/" />
+    <meta
+      property="og:title"
+      content="Добролікар | Приватний медичний центр у Львові"
+    />
+    <meta
+      property="og:description"
+      content="ЛОР, офтальмологія, алергологія та слух — для дорослих і дітей. Працюємо швидко, без черг і з сучасним обладнанням. Запис онлайн."
+    />
+    <meta
+      property="og:image"
+      content="https://dobrolikar.ua/images/og-image.jpg"
+    />
+    <meta property="og:image:width" content="1200" />
+    <meta property="og:image:height" content="630" />
+    <meta property="og:locale" content="uk_UA" />
+    <meta property="og:site_name" content="Добролікар" />
+
+    <!-- Twitter Card -->
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta
+      name="twitter:title"
+      content="Добролікар | Приватний медичний центр у Львові"
+    />
+    <meta
+      name="twitter:description"
+      content="ЛОР, офтальмологія, алергологія та слух — для дорослих і дітей. Без черг. Запис онлайн."
+    />
+    <meta
+      name="twitter:image"
+      content="https://dobrolikar.ua/images/og-image.jpg"
+    />
+
+    <!-- Structured Data: LocalBusiness -->
+    <script type="application/ld+json">
+      {
+        "@context": "https://schema.org",
+        "@type": "MedicalClinic",
+        "name": "Медичний центр «Добролікар»",
+        "alternateName": "Добролікар",
+        "url": "https://dobrolikar.ua",
+        "logo": "https://dobrolikar.ua/images/logo.png",
+        "image": "https://dobrolikar.ua/images/og-image.jpg",
+        "description": "Вузькоспеціалізована клініка лікування захворювань вуха, горла, носа та очей для дорослих і дітей. Підбір слухових апаратів та окулярів.",
+        "telephone": "+380939307374",
+        "email": "dobrolikar.lviv@gmail.com",
+        "address": {
+          "@type": "PostalAddress",
+          "streetAddress": "вул. Янева, 25",
+          "addressLocality": "Львів",
+          "addressCountry": "UA",
+          "postalCode": "79000"
+        },
+        "geo": {
+          "@type": "GeoCoordinates",
+          "latitude": 49.8109,
+          "longitude": 24.0108
+        },
+        "openingHoursSpecification": [
+          {
+            "@type": "OpeningHoursSpecification",
+            "dayOfWeek": [
+              "Monday",
+              "Tuesday",
+              "Wednesday",
+              "Thursday",
+              "Friday"
+            ],
+            "opens": "08:00",
+            "closes": "20:00"
+          },
+          {
+            "@type": "OpeningHoursSpecification",
+            "dayOfWeek": "Saturday",
+            "opens": "09:00",
+            "closes": "18:00"
+          },
+          {
+            "@type": "OpeningHoursSpecification",
+            "dayOfWeek": "Sunday",
+            "opens": "10:00",
+            "closes": "16:00"
+          }
+        ],
+        "medicalSpecialty": [
+          "Otolaryngology",
+          "Ophthalmology",
+          "Allergy",
+          "Audiology"
+        ],
+        "aggregateRating": {
+          "@type": "AggregateRating",
+          "ratingValue": "5.0",
+          "reviewCount": "350",
+          "bestRating": "5"
+        },
+        "sameAs": ["https://bookon.ua/s/dobrolikar_clinic"]
+      }
+    </script>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link
-      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap"
+      href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;600&family=Playfair+Display:ital,wght@0,400;0,600;1,400&display=swap"
       rel="stylesheet"
     />
     <link rel="stylesheet" href="styles.css" />
+    <script src="js/main.js" defer></script>
   </head>
   <body>
-    <!-- Header with Navigation -->
-    <header>
-      <nav class="navbar">
-        <div class="menu-btn">
-          <span></span>
-          <span></span>
-          <span></span>
-        </div>
-        <a href="#" class="logo">
-          <img src="images/logo-mid.png" alt="Добролікар" />
-        </a>
-        <ul class="nav-links">
-          <li><a href="#services">Послуги</a></li>
-          <li><a href="#about">Про нас</a></li>
-          <li><a href="#team">Лікарі</a></li>
-          <li><a href="#testimonials">Відгуки</a></li>
-          <li><a href="#contact">Контакти</a></li>
-        </ul>
-        <a href="tel:+380939307374" class="phone">+38 (093) 930-73-74</a>
-      </nav>
-      <div class="sidebar-overlay"></div>
-    </header>
+    <div class="bg-mesh"></div>
+    <div class="bg-noise"></div>
 
-    <!-- Hero Section -->
-    <section class="hero">
-      <div class="hero-content">
-        <h1 id="hero-title">Ваше здоров'я - наш пріоритет!</h1>
-        <p id="hero-description">
-          Приватний медичний центр "Добролікар" - це вузькоспеціалізована
-          клініка лікування захворювань вуха, горла, носа та очей для дорослих
-          та дітей.
-        </p>
+    <!-- NAV -->
+    <nav id="mainNav">
+      <a class="nav-logo" href="#">
+        <img src="images/logo_blue_1.png" alt="Добролікар" />
+      </a>
+      <ul class="nav-links">
+        <li><a href="#services">Послуги</a></li>
+        <li><a href="#team">Лікарі</a></li>
+        <li><a href="#testimonials">Відгуки</a></li>
+        <li><a href="#faq">FAQ</a></li>
+        <li><a href="#contact">Контакти</a></li>
+      </ul>
+      <div class="nav-pill">
         <a
           href="https://bookon.ua/s/dobrolikar_clinic"
           target="_blank"
-          rel="noopener noreferrer"
-          class="btn"
-          >Записатися на прийом</a
+          class="btn-nav"
+          >Записатись</a
+        >
+        <button
+          class="hamburger"
+          id="hamburger"
+          aria-label="Меню"
+          onclick="toggleMenu()"
+        >
+          <span></span><span></span><span></span>
+        </button>
+      </div>
+    </nav>
+
+    <div class="mobile-menu" id="mobileMenu">
+      <ul>
+        <li><a href="#services" onclick="closeMenu()">Послуги</a></li>
+        <li><a href="#team" onclick="closeMenu()">Лікарі</a></li>
+        <li><a href="#testimonials" onclick="closeMenu()">Відгуки</a></li>
+        <li><a href="#faq" onclick="closeMenu()">FAQ</a></li>
+        <li><a href="#contact" onclick="closeMenu()">Контакти</a></li>
+      </ul>
+      <div class="mobile-menu-cta">
+        <a
+          href="https://bookon.ua/s/dobrolikar_clinic"
+          target="_blank"
+          class="btn-primary"
+          style="text-align: center"
+          >Записатись на прийом ↗</a
+        >
+        <a
+          href="tel:+380939307374"
+          class="btn-ghost"
+          style="
+            text-align: center;
+            color: var(--dark);
+            background: rgba(15, 35, 64, 0.07);
+            border-color: rgba(15, 35, 64, 0.18);
+          "
+          >+38 (093) 930-73-74</a
         >
       </div>
-    </section>
+    </div>
 
-    <!-- Services Section -->
-    <section id="services" class="section">
-      <h2 class="section-title">Наші послуги</h2>
-      <div class="services-grid">
-        <div class="service-card">
-          <div class="service-img">
-            <img src="images/optika-2.jpg" alt="Оптика" />
+    <!-- HERO -->
+    <section class="hero" id="hero">
+      <div class="hero-bg"></div>
+      <div class="orb orb-1"></div>
+      <div class="orb orb-2"></div>
+      <div class="hero-layout">
+        <div class="hero-left">
+          <div class="hero-eyebrow">
+            <div class="hero-eyebrow-dot">✦</div>
+            Приватна клініка у Львові
           </div>
-          <div class="service-content">
-            <h3 id="service-glass-title">Оптика</h3>
-            <p id="service-glass-description">
-              Підбір окулярів для корекції зору, сонцезахисних окулярів, лінзи,
-              окуляри з комп'ютерним захистом
-            </p>
-          </div>
-        </div>
-
-        <div class="service-card">
-          <div class="service-img">
-            <img src="images/ophtalmologist-1.JPG" alt="Офтальмолог" />
-          </div>
-          <div class="service-content">
-            <h3 id="service-ophthalmology-title">Консультація офтальмолога</h3>
-            <p id="service-ophthalmology-description">
-              Комплексна діагностика зору, лікування захворювань очей, підбір
-              окулярів та контактних лінз для дорослих та дітей.
-            </p>
-          </div>
-        </div>
-
-        <div class="service-card">
-          <div class="service-img">
-            <img src="images/hearing-aids-2.jpg" alt="Слухові апарати" />
-          </div>
-          <div class="service-content">
-            <h3 id="service-hearing-title">Слухові апарати</h3>
-            <p id="service-hearing-description">
-              Діагностика слуху, слухопротезування, підбір слухових апаратів
-              дітям та дорослим, комп'ютерне програмування слухових апаратів,
-              виготовлення вкладок та берушей.
-            </p>
-          </div>
-        </div>
-
-        <div class="service-card">
-          <div class="service-img">
-            <img src="images/audiologist.JPG" alt="Сурдолог" />
-          </div>
-          <div class="service-content">
-            <h3 id="service-surdology-title">Консультація сурдолога</h3>
-            <p id="service-surdology-description">
-              Широкий спектр діагностичних та лікувальних процедур для виявлення
-              та корекції порушень слуху у дорослих та дітей.
-            </p>
-          </div>
-        </div>
-
-        <div class="service-card">
-          <div class="service-img">
-            <img src="images/chief-3.JPG" alt="Отоларинголог" />
-          </div>
-          <div class="service-content">
-            <h3 id="service-otolaryngology-title">
-              Консультація отоларинголога
-            </h3>
-            <p id="service-otolaryngology-description">
-              Діагностика та лікування захворювань вуха, горла та носа. Сучасне
-              обладнання та ефективні методи лікування.
-            </p>
-          </div>
-        </div>
-
-        <div class="service-card">
-          <div class="service-img">
-            <img src="images/allergologist.JPG" alt="Алерголог" />
-          </div>
-          <div class="service-content">
-            <h3 id="service-allergology-title">Консультація алерголога</h3>
-            <p id="service-allergology-description">
-              Діагностика алергічних захворювань, проведення алергопроб,
-              розробка індивідуальних схем лікування та профілактики.
-            </p>
-          </div>
-        </div>
-      </div>
-    </section>
-
-    <!-- About Section -->
-    <section id="about" class="section about">
-      <h2 class="section-title">Про клініку</h2>
-      <div class="bento-grid">
-        <!-- Image Card -->
-        <div class="bento-card bento-image">
-          <div class="bento-card-image"></div>
-        </div>
-
-        <!-- Intro Card -->
-        <div class="bento-card bento-intro">
-          <div class="bento-content">
-            <h2>Медицина преміум-класу</h2>
-            <p>
-              Медичний центр «Добролікар» — простір добролікарів та
-              добропацієнтів. Це вузькоспеціалізована клініка лікування
-              захворювань вуха, горла, носа та очей для дорослих та дітей.
-              Підбір слухових апаратів та окулярів.
-            </p>
-            <p class="highlight-text">
-              Місце, де починають краще бачити, чути та дихати!
-            </p>
-          </div>
-        </div>
-
-        <!-- Doctors Card -->
-        <div class="bento-card bento-doctors">
-          <div class="bento-card-image bento-doctors-image"></div>
-          <div class="bento-content">
-            <h3>Наші дорослі та дитячі лікарі</h3>
-            <ol>
-              <li>Отоларинголог (вухо, горло, ніс)</li>
-              <li>Офтальмолог (очі та підбір окулярів)</li>
-              <li>Алерголог (алергія)</li>
-              <li>Сурдолог (слух та слухові апарати)</li>
-            </ol>
-          </div>
-        </div>
-
-        <!-- Optics Card -->
-        <div class="bento-card bento-optics">
-          <div class="bento-content">
-            <h3>Оптика</h3>
-            <ul>
-              <li>Окуляри для корекції зору</li>
-              <li>Сонцезахисні окуляри</li>
-              <li>Лінзи</li>
-              <li>Окуляри з комп'ютерним захистом</li>
-            </ul>
-          </div>
-        </div>
-
-        <!-- Hearing Aids Card -->
-        <div class="bento-card bento-hearing">
-          <div class="bento-content">
-            <h3>Слухові апарати</h3>
-            <ul>
-              <li>Внутрішньоканальні</li>
-              <li>Завушні</li>
-            </ul>
-          </div>
-        </div>
-
-        <!-- CTA Card -->
-        <div class="bento-card bento-cta bento-move">
-          <h3>Готові записатися?</h3>
-          <p>Зв'яжіться з нами для консультації</p>
-          <a href="#contact" class="btn">Дізнатися більше</a>
-        </div>
-      </div>
-    </section>
-
-    <!-- Team Section -->
-    <section id="team" class="section">
-      <h2 class="section-title">Наша команда</h2>
-      <div class="team-grid">
-        <div class="team-member">
-          <div class="team-photo">
-            <img src="images/chief-portrait.JPG" alt="Юрій Іванович" />
-          </div>
-          <h3 class="team-name">Юрій Іванович</h3>
-          <p class="team-role">Головний лікар, ЛОР</p>
-        </div>
-
-        <div class="team-member">
-          <div class="team-photo">
-            <img src="images/ophtalmologist-portrait.JPG" alt="Анна Іванович" />
-          </div>
-          <h3 class="team-name">Анна Іванович</h3>
-          <p class="team-role">Офтальмолог</p>
-        </div>
-
-        <div class="team-member">
-          <div class="team-photo">
-            <img src="images/likar-3-portrait-1.jpg" alt="Анна Шевченко" />
-          </div>
-          <h3 class="team-name">Анна Шевченко</h3>
-          <p class="team-role">Алерголог</p>
-        </div>
-
-        <div class="team-member">
-          <div class="team-photo">
-            <img src="images/likar-2-portrait-1.jpg" alt="Оксана Веселка" />
-          </div>
-          <h3 class="team-name">Оксана Веселка</h3>
-          <p class="team-role">Сурдолог</p>
-        </div>
-      </div>
-    </section>
-
-    <!-- Testimonials Section -->
-    <section id="testimonials" class="section">
-      <h2 class="section-title">Відгуки наших пацієнтів</h2>
-      <div class="testimonials-grid">
-        <div class="testimonial-card">
-          <p class="testimonial-text">
-            Дуже задоволена обслуговуванням у клініці! Лікарі професійні, уважні
-            до пацієнтів. Сучасне обладнання та комфортна атмосфера. Рекомендую
-            всім!
+          <h1 class="hero-title">
+            Точна діагностика<br />та <em>лікування</em><br />без зайвих
+            процедур
+          </h1>
+          <p class="hero-desc">
+            ЛОР, офтальмологія, алергологія та слух — для дорослих і дітей.
+            Працюємо швидко, без черг і з сучасним обладнанням.
           </p>
-          <div class="testimonial-author">
-            <div class="author-photo">
-              <img src="images/patient-4.jpg" alt="Аліна Квітка" />
-            </div>
-            <div class="author-info">
-              <h4>Аліна Квітка</h4>
-              <div class="rating">★★★★★</div>
-            </div>
-          </div>
-        </div>
-
-        <div class="testimonial-card">
-          <p class="testimonial-text">
-            Звернувся до офтальмолога за порадою. Отримав кваліфіковану
-            консультацію, підібрали ідеальні окуляри. Дякую за професіоналізм!
-          </p>
-          <div class="testimonial-author">
-            <div class="author-photo">
-              <img src="images/patient-2.jpg" alt="Роман Дубик" />
-            </div>
-            <div class="author-info">
-              <h4>Роман Дубик</h4>
-              <div class="rating">★★★★★</div>
-            </div>
-          </div>
-        </div>
-
-        <div class="testimonial-card">
-          <p class="testimonial-text">
-            Доброго вечора! Ми вам дуже дякуємо, що допомогли, нам вже дуже
-            краще дай Бог вам здоров'я 😊
-          </p>
-          <div class="testimonial-author">
-            <div class="author-photo">
-              <img src="images/patient-3.jpg" alt="Оксана Ткаченко" />
-            </div>
-            <div class="author-info">
-              <h4>Оксана Ткаченко</h4>
-              <div class="rating">★★★★★</div>
-            </div>
-          </div>
-        </div>
-      </div>
-    </section>
-
-    <!-- Contact Section -->
-    <section id="contact" class="section">
-      <h2 class="section-title">Завітайте до нас</h2>
-      <div class="contact-content">
-        <div class="contact-info">
-          <div class="contact-form">
-            <h3>Запишіться на прийом онлайн</h3>
+          <div class="hero-actions">
             <a
               href="https://bookon.ua/s/dobrolikar_clinic"
               target="_blank"
-              rel="noopener noreferrer"
-              class="btn"
-              >Записатися</a
+              class="btn-primary"
+              >Записатись на прийом ↗</a
             >
+            <a href="#services" class="btn-ghost">Наші послуги</a>
           </div>
-          <h3>Наші контакти</h3>
+          <div class="hero-stats">
+            <div class="hero-stat">
+              <div class="stat-val">10+</div>
+              <div class="stat-lbl">Років досвіду</div>
+            </div>
+            <div class="hero-stat">
+              <div class="stat-val">15 000+</div>
+              <div class="stat-lbl">Пацієнтів</div>
+            </div>
+            <div class="hero-stat">
+              <div class="stat-val">Без черг</div>
+              <div class="stat-lbl">Запис на сьогодні</div>
+            </div>
+          </div>
+        </div>
+        <div class="hero-right">
+          <div class="float-card card-main">
+            <div class="card-main-lbl">Пацієнти задоволені</div>
+            <div class="card-avatars">
+              <div class="card-avatar">ЮІ</div>
+              <div class="card-avatar">АІ</div>
+              <div class="card-avatar">ОВ</div>
+            </div>
+            <div class="card-big-num">350<span>+</span></div>
+            <div class="card-big-sub">Відгуків на Google Maps</div>
+            <div class="card-pills">
+              <div class="pill">
+                <div class="pill-dot"></div>
+                ЛОР
+              </div>
+              <div class="pill">
+                <div class="pill-dot"></div>
+                Офтальмологія
+              </div>
+              <div class="pill">
+                <div class="pill-dot"></div>
+                Алергологія
+              </div>
+              <div class="pill">
+                <div class="pill-dot"></div>
+                Слух
+              </div>
+              <div class="pill">
+                <div class="pill-dot"></div>
+                Оптика
+              </div>
+            </div>
+          </div>
+          <div class="float-card card-badge">
+            <div
+              class="badge-row"
+              style="
+                margin-bottom: 14px;
+                padding-bottom: 14px;
+                border-bottom: 1px solid rgba(255, 255, 255, 0.25);
+              "
+            >
+              <div class="badge-icon">
+                <svg
+                  width="20"
+                  height="20"
+                  viewBox="0 0 20 20"
+                  fill="none"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <rect
+                    x="7.5"
+                    y="1.5"
+                    width="5"
+                    height="17"
+                    rx="2.5"
+                    fill="white"
+                  />
+                  <rect
+                    x="1.5"
+                    y="7.5"
+                    width="17"
+                    height="5"
+                    rx="2.5"
+                    fill="white"
+                  />
+                </svg>
+              </div>
+              <div>
+                <div class="badge-val">5</div>
+                <div class="badge-lbl">Спеціалізацій</div>
+              </div>
+            </div>
+            <div class="badge-row">
+              <div
+                style="
+                  font-size: 14px;
+                  letter-spacing: 2px;
+                  color: #fbbf24;
+                  margin-right: 10px;
+                "
+              >
+                ★★★★★
+              </div>
+              <div>
+                <div class="badge-val" style="font-size: 18px">4.9</div>
+                <div class="badge-lbl">Рейтинг Google</div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- SERVICES -->
+    <section id="services">
+      <div class="services-header reveal">
+        <div>
+          <div class="section-eyebrow">Що ми лікуємо</div>
+          <h2 class="section-title">Медичні <em>послуги</em></h2>
+        </div>
+        <p class="section-sub">
+          Вузькоспеціалізована клініка лікування захворювань вуха, горла, носа
+          та очей для дорослих та дітей.
+        </p>
+      </div>
+      <div class="services-grid">
+        <div class="service-card reveal stagger-1">
+          <div class="service-num">01</div>
+          <div class="service-icon-wrap">
+            <svg
+              viewBox="0 0 24 24"
+              fill="none"
+              stroke="currentColor"
+              stroke-width="1.5"
+              stroke-linecap="round"
+              stroke-linejoin="round"
+            >
+              <path d="M2 12s3.5-6 10-6 10 6 10 6-3.5 6-10 6-10-6-10-6z" />
+              <circle cx="12" cy="12" r="2.5" />
+              <line x1="12" y1="2" x2="12" y2="5" />
+              <line x1="12" y1="19" x2="12" y2="22" />
+            </svg>
+          </div>
+          <div class="service-name">Консультація офтальмолога</div>
+          <p class="service-desc">
+            Комплексна діагностика зору, лікування захворювань очей, підбір
+            окулярів та контактних лінз для дорослих та дітей.
+          </p>
+          <a
+            href="https://bookon.ua/s/dobrolikar_clinic"
+            target="_blank"
+            class="service-arrow"
+            >Записатись →</a
+          >
+        </div>
+        <div class="service-card reveal stagger-2">
+          <!-- <div class="service-card-image"></div> -->
+          <div class="service-num">02</div>
+          <div class="service-icon-wrap">
+            <svg
+              viewBox="0 0 24 24"
+              fill="none"
+              stroke="currentColor"
+              stroke-width="1.5"
+              stroke-linecap="round"
+              stroke-linejoin="round"
+            >
+              <path
+                d="M12 4a6 6 0 0 1 6 6c0 2.5-1.5 4.5-3 5.5V18a1 1 0 0 1-1 1h-2a1 1 0 0 1-1-1v-2.5C9.5 14.5 8 12.5 8 10a6 6 0 0 1 4-5.6"
+              />
+              <path d="M10 18.5c0 1.5 1 2.5 2 2.5s2-1 2-2.5" />
+            </svg>
+          </div>
+          <div class="service-name">Консультація отоларинголога</div>
+          <p class="service-desc">
+            Діагностика та лікування захворювань вуха, горла та носа. Сучасне
+            обладнання та ефективні методи лікування.
+          </p>
+          <a
+            href="https://bookon.ua/s/dobrolikar_clinic"
+            target="_blank"
+            class="service-arrow"
+            >Записатись →</a
+          >
+        </div>
+        <div class="service-card reveal stagger-3">
+          <div class="service-num">03</div>
+          <div class="service-icon-wrap">
+            <svg
+              viewBox="0 0 24 24"
+              fill="none"
+              stroke="currentColor"
+              stroke-width="1.5"
+              stroke-linecap="round"
+              stroke-linejoin="round"
+            >
+              <path
+                d="M12 2a4 4 0 0 1 4 4c0 1.5-.7 2.8-1.8 3.6L12 22l-2.2-12.4A4 4 0 0 1 8 6a4 4 0 0 1 4-4z"
+              />
+              <path d="M8.5 9.5C6 9 4 7 4 5" />
+              <path d="M15.5 9.5C18 9 20 7 20 5" />
+            </svg>
+          </div>
+          <div class="service-name">Консультація алерголога</div>
+          <p class="service-desc">
+            Діагностика алергічних захворювань, проведення алергопроб, розробка
+            індивідуальних схем лікування та профілактики.
+          </p>
+          <a
+            href="https://bookon.ua/s/dobrolikar_clinic"
+            target="_blank"
+            class="service-arrow"
+            >Записатись →</a
+          >
+        </div>
+        <div class="service-card reveal stagger-4">
+          <div class="service-num">04</div>
+          <div class="service-icon-wrap">
+            <svg
+              viewBox="0 0 24 24"
+              fill="none"
+              stroke="currentColor"
+              stroke-width="1.5"
+              stroke-linecap="round"
+              stroke-linejoin="round"
+            >
+              <path
+                d="M5 9a7 7 0 0 1 14 0v5a2 2 0 0 1-2 2h-1a2 2 0 0 1-2-2v-2a2 2 0 0 1 2-2h1V9a5 5 0 0 0-10 0v1h1a2 2 0 0 1 2 2v2a2 2 0 0 1-2 2H7a2 2 0 0 1-2-2V9z"
+              />
+            </svg>
+          </div>
+          <div class="service-name">Консультація сурдолога</div>
+          <p class="service-desc">
+            Широкий спектр діагностичних та лікувальних процедур для виявлення
+            та корекції порушень слуху у дорослих та дітей.
+          </p>
+          <a
+            href="https://bookon.ua/s/dobrolikar_clinic"
+            target="_blank"
+            class="service-arrow"
+            >Записатись →</a
+          >
+        </div>
+        <div class="service-card reveal stagger-5">
+          <div class="service-num">05</div>
+          <div class="service-icon-wrap">
+            <svg
+              viewBox="0 0 24 24"
+              fill="none"
+              stroke="currentColor"
+              stroke-width="1.5"
+              stroke-linecap="round"
+              stroke-linejoin="round"
+            >
+              <path d="M3 11a9 9 0 0 1 18 0" />
+              <path d="M6 11a6 6 0 0 1 12 0" />
+              <path d="M9 11a3 3 0 0 1 6 0" />
+              <path d="M17 11v5a2 2 0 0 1-4 0v-1" />
+            </svg>
+          </div>
+          <div class="service-name">Слухові апарати</div>
+          <p class="service-desc">
+            Діагностика слуху, слухопротезування, підбір слухових апаратів дітям
+            та дорослим, комп'ютерне програмування апаратів.
+          </p>
+          <a
+            href="https://bookon.ua/s/dobrolikar_clinic"
+            target="_blank"
+            class="service-arrow"
+            >Записатись →</a
+          >
+        </div>
+        <div class="service-card reveal stagger-6">
+          <div class="service-num">06</div>
+          <div class="service-icon-wrap">
+            <svg
+              viewBox="0 0 24 24"
+              fill="none"
+              stroke="currentColor"
+              stroke-width="1.5"
+              stroke-linecap="round"
+              stroke-linejoin="round"
+            >
+              <path d="M2 12s3-7 10-7 10 7 10 7-3 7-10 7-10-7-10-7z" />
+              <circle cx="12" cy="12" r="3" />
+            </svg>
+          </div>
+          <div class="service-name">Оптика</div>
+          <p class="service-desc">
+            Підбір окулярів для корекції зору, сонцезахисних окулярів,
+            контактних лінз, окулярів з комп'ютерним захистом.
+          </p>
+          <a
+            href="https://bookon.ua/s/dobrolikar_clinic"
+            target="_blank"
+            class="service-arrow"
+            >Записатись →</a
+          >
+        </div>
+      </div>
+    </section>
+
+    <!-- TEAM -->
+    <section class="team" id="team">
+      <div class="section-eyebrow reveal">Наша команда</div>
+      <h2 class="section-title reveal">Досвідчені <em>лікарі</em></h2>
+
+      <div class="team-banner reveal-scale">
+        <img
+          class="team-banner-img"
+          src="images/personal_1.JPG"
+          alt="Команда Добролікар"
+        />
+        <div class="team-banner-overlay"></div>
+        <div class="team-banner-text">
+          <h2>
+            Місце, де починають<br />краще <em>бачити, чути</em><br />та дихати
+          </h2>
+          <p>
+            Медичний центр «Добролікар» — простір добролікарів та
+            добропацієнтів. Вузькоспеціалізована клініка для дорослих та дітей.
+          </p>
+          <a
+            href="https://bookon.ua/s/dobrolikar_clinic"
+            target="_blank"
+            class="btn-primary"
+            >Зробити перший крок ↗</a
+          >
+        </div>
+      </div>
+
+      <div class="team-grid">
+        <div class="doctor-card reveal stagger-1">
+          <div class="doctor-photo"></div>
+          <div class="doctor-info">
+            <div class="doctor-name">Юрій Іванович</div>
+            <div class="doctor-spec">Отоларинголог (ЛОР)</div>
+            <div class="doctor-exp">Головний лікар</div>
+            <div class="doctor-tag">Вища категорія</div>
+          </div>
+        </div>
+        <div class="doctor-card reveal stagger-2">
+          <div class="doctor-photo"></div>
+          <div class="doctor-info">
+            <div class="doctor-name">Анна Іванович</div>
+            <div class="doctor-spec">Офтальмолог</div>
+            <div class="doctor-exp">Підбір окулярів та лінз</div>
+            <div class="doctor-tag">Вища категорія</div>
+          </div>
+        </div>
+        <div class="doctor-card reveal stagger-3">
+          <div class="doctor-photo"></div>
+          <div class="doctor-info">
+            <div class="doctor-name">Анна Шевченко</div>
+            <div class="doctor-spec">Алерголог</div>
+            <div class="doctor-exp">Алергопроби та лікування</div>
+            <div class="doctor-tag">І категорія</div>
+          </div>
+        </div>
+        <div class="doctor-card reveal stagger-4">
+          <div class="doctor-photo"></div>
+          <div class="doctor-info">
+            <div class="doctor-name">Оксана Веселка</div>
+            <div class="doctor-spec">Сурдолог</div>
+            <div class="doctor-exp">Слухові апарати</div>
+            <div class="doctor-tag">Вища категорія</div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- TESTIMONIALS -->
+    <section class="testimonials" id="testimonials">
+      <div class="reveal">
+        <div class="section-eyebrow">Відгуки пацієнтів</div>
+        <h2 class="section-title">Що кажуть <em>люди</em></h2>
+      </div>
+      <div class="testi-track-wrap">
+        <div class="testi-track">
+          <div class="testi-card reveal stagger-1">
+            <span class="testi-quote">"</span>
+            <p class="testi-text">
+              Найкращий лікар-отоларинголог Іванович Юрій Васильович! Наша
+              дитинка маленька. Лікар має підхід до маленьких пацієнтів, в
+              поліклініці сучасне обладнання, все чистеньке, приємний персонал.
+              Вже не вперше звертаємось. Рекомендую із власного досвіду!
+            </p>
+            <div class="testi-footer">
+              <div class="testi-avatar">НЛ</div>
+              <div>
+                <div class="testi-name">Наталія Лівчак</div>
+                <div class="testi-stars">★★★★★</div>
+                <div class="testi-date">тиждень тому · Google</div>
+              </div>
+            </div>
+          </div>
+
+          <div class="testi-card reveal stagger-2">
+            <span class="testi-quote">"</span>
+            <p class="testi-text">
+              Прекрасний досвід походу до лікаря ЛОРа. Абсолютно безболісна
+              процедура огляду ендоскопом, лікар Юрій Васильович все розказав і
+              пояснив план лікування. Я дуже задоволена. Буду радити своїм
+              рідним!
+            </p>
+            <div class="testi-footer">
+              <div class="testi-avatar">IA</div>
+              <div>
+                <div class="testi-name">I A N I K</div>
+                <div class="testi-stars">★★★★★</div>
+                <div class="testi-date">3 місяці тому · Google</div>
+              </div>
+            </div>
+          </div>
+
+          <div class="testi-card reveal stagger-3">
+            <span class="testi-quote">"</span>
+            <p class="testi-text">
+              Відвідували дитячого офтальмолога у Добролікар. Лікарка Анна
+              Михайлівна була дуже уважна і доброзичлива, легко знайшла підхід
+              до дитини та все зрозуміло пояснила. Сама клініка є чистенька та
+              гарна, персонал дуже привітний. Рекомендуємо!
+            </p>
+            <div class="testi-footer">
+              <div class="testi-avatar">ІЛ</div>
+              <div>
+                <div class="testi-name">Ірина Литвин</div>
+                <div class="testi-stars">★★★★★</div>
+                <div class="testi-date">місяць тому · Google</div>
+              </div>
+            </div>
+          </div>
+
+          <div class="testi-card reveal stagger-4">
+            <span class="testi-quote">"</span>
+            <p class="testi-text">
+              Дуже гарна нова клініка! Юрій Васильович чудовий і уважний лікар,
+              швидко і професійно провів огляд дитини і призначив лікування!
+              Персонал уважний і супер клієнтоорієнтований. Обов'язково
+              звернемось знову!
+            </p>
+            <div class="testi-footer">
+              <div class="testi-avatar">ОЛ</div>
+              <div>
+                <div class="testi-name">Олена Легкова</div>
+                <div class="testi-stars">★★★★★</div>
+                <div class="testi-date">4 місяці тому · Google</div>
+              </div>
+            </div>
+          </div>
+
+          <div class="testi-card reveal stagger-5">
+            <span class="testi-quote">"</span>
+            <p class="testi-text">
+              Чудова клініка, сучасне обладнання, гарне обслуговування. Юрій
+              Васильович наш рятівник — чуйний, виважений, досвідчений лікар з
+              сучасним підходом до лікування. Рекомендую!
+            </p>
+            <div class="testi-footer">
+              <div class="testi-avatar">ОК</div>
+              <div>
+                <div class="testi-name">Olya Крупач</div>
+                <div class="testi-stars">★★★★★</div>
+                <div class="testi-date">місяць тому · Google</div>
+              </div>
+            </div>
+          </div>
+
+          <div class="testi-card reveal stagger-6">
+            <span class="testi-quote">"</span>
+            <p class="testi-text">
+              Чудова приватна клініка. Звернувся з болем у вусі — сучасне
+              обладнання з виводом на екран вразило, професійна консультація
+              лікаря та вирішення проблеми одразу на місці без зайвих черг.
+              Рекомендуємо!
+            </p>
+            <div class="testi-footer">
+              <div class="testi-avatar">LM</div>
+              <div>
+                <div class="testi-name">LIDER-M</div>
+                <div class="testi-stars">★★★★★</div>
+                <div class="testi-date">3 місяці тому · Google</div>
+              </div>
+            </div>
+          </div>
+
+          <div class="testi-card reveal stagger-1">
+            <span class="testi-quote">"</span>
+            <p class="testi-text">
+              Дуже класний підхід до діток! Лікар Юрій Васильович прекрасно
+              налагоджує контакт з дітьми — це сприяє спокійному процесу огляду.
+              Професійно проводить лікувальні маніпуляції! Ми дуже задоволені.
+              Дякуємо! Рекомендуємо!
+            </p>
+            <div class="testi-footer">
+              <div class="testi-avatar">КЕ</div>
+              <div>
+                <div class="testi-name">Комерційний Екаунт</div>
+                <div class="testi-stars">★★★★★</div>
+                <div class="testi-date">4 місяці тому · Google</div>
+              </div>
+            </div>
+          </div>
+
+          <div class="testi-card reveal stagger-2">
+            <span class="testi-quote">"</span>
+            <p class="testi-text">
+              Чудова клініка. Юрій Васильович найкращий лікар — швидко знайшов
+              причину частого захворювання донечки. Ми дуже раді, що потрапили
+              саме до нього!
+            </p>
+            <div class="testi-footer">
+              <div class="testi-avatar">ОЛ</div>
+              <div>
+                <div class="testi-name">Оксана Левчук</div>
+                <div class="testi-stars">★★★★★</div>
+                <div class="testi-date">4 місяці тому · Google</div>
+              </div>
+            </div>
+          </div>
+          <div class="testi-card reveal stagger-1">
+            <span class="testi-quote">"</span>
+            <p class="testi-text">
+              Найкращий лікар-отоларинголог Іванович Юрій Васильович! Наша
+              дитинка маленька. Лікар має підхід до маленьких пацієнтів, в
+              поліклініці сучасне обладнання, все чистеньке, приємний персонал.
+              Вже не вперше звертаємось. Рекомендую із власного досвіду!
+            </p>
+            <div class="testi-footer">
+              <div class="testi-avatar">НЛ</div>
+              <div>
+                <div class="testi-name">Наталія Лівчак</div>
+                <div class="testi-stars">★★★★★</div>
+                <div class="testi-date">тиждень тому · Google</div>
+              </div>
+            </div>
+          </div>
+
+          <div class="testi-card reveal stagger-2">
+            <span class="testi-quote">"</span>
+            <p class="testi-text">
+              Прекрасний досвід походу до лікаря ЛОРа. Абсолютно безболісна
+              процедура огляду ендоскопом, лікар Юрій Васильович все розказав і
+              пояснив план лікування. Я дуже задоволена. Буду радити своїм
+              рідним!
+            </p>
+            <div class="testi-footer">
+              <div class="testi-avatar">IA</div>
+              <div>
+                <div class="testi-name">I A N I K</div>
+                <div class="testi-stars">★★★★★</div>
+                <div class="testi-date">3 місяці тому · Google</div>
+              </div>
+            </div>
+          </div>
+
+          <div class="testi-card reveal stagger-3">
+            <span class="testi-quote">"</span>
+            <p class="testi-text">
+              Відвідували дитячого офтальмолога у Добролікар. Лікарка Анна
+              Михайлівна була дуже уважна і доброзичлива, легко знайшла підхід
+              до дитини та все зрозуміло пояснила. Сама клініка є чистенька та
+              гарна, персонал дуже привітний. Рекомендуємо!
+            </p>
+            <div class="testi-footer">
+              <div class="testi-avatar">ІЛ</div>
+              <div>
+                <div class="testi-name">Ірина Литвин</div>
+                <div class="testi-stars">★★★★★</div>
+                <div class="testi-date">місяць тому · Google</div>
+              </div>
+            </div>
+          </div>
+
+          <div class="testi-card reveal stagger-4">
+            <span class="testi-quote">"</span>
+            <p class="testi-text">
+              Дуже гарна нова клініка! Юрій Васильович чудовий і уважний лікар,
+              швидко і професійно провів огляд дитини і призначив лікування!
+              Персонал уважний і супер клієнтоорієнтований. Обов'язково
+              звернемось знову!
+            </p>
+            <div class="testi-footer">
+              <div class="testi-avatar">ОЛ</div>
+              <div>
+                <div class="testi-name">Олена Легкова</div>
+                <div class="testi-stars">★★★★★</div>
+                <div class="testi-date">4 місяці тому · Google</div>
+              </div>
+            </div>
+          </div>
+
+          <div class="testi-card reveal stagger-5">
+            <span class="testi-quote">"</span>
+            <p class="testi-text">
+              Чудова клініка, сучасне обладнання, гарне обслуговування. Юрій
+              Васильович наш рятівник — чуйний, виважений, досвідчений лікар з
+              сучасним підходом до лікування. Рекомендую!
+            </p>
+            <div class="testi-footer">
+              <div class="testi-avatar">ОК</div>
+              <div>
+                <div class="testi-name">Olya Крупач</div>
+                <div class="testi-stars">★★★★★</div>
+                <div class="testi-date">місяць тому · Google</div>
+              </div>
+            </div>
+          </div>
+
+          <div class="testi-card reveal stagger-6">
+            <span class="testi-quote">"</span>
+            <p class="testi-text">
+              Чудова приватна клініка. Звернувся з болем у вусі — сучасне
+              обладнання з виводом на екран вразило, професійна консультація
+              лікаря та вирішення проблеми одразу на місці без зайвих черг.
+              Рекомендуємо!
+            </p>
+            <div class="testi-footer">
+              <div class="testi-avatar">LM</div>
+              <div>
+                <div class="testi-name">LIDER-M</div>
+                <div class="testi-stars">★★★★★</div>
+                <div class="testi-date">3 місяці тому · Google</div>
+              </div>
+            </div>
+          </div>
+
+          <div class="testi-card reveal stagger-1">
+            <span class="testi-quote">"</span>
+            <p class="testi-text">
+              Дуже класний підхід до діток! Лікар Юрій Васильович прекрасно
+              налагоджує контакт з дітьми — це сприяє спокійному процесу огляду.
+              Професійно проводить лікувальні маніпуляції! Ми дуже задоволені.
+              Дякуємо! Рекомендуємо!
+            </p>
+            <div class="testi-footer">
+              <div class="testi-avatar">КЕ</div>
+              <div>
+                <div class="testi-name">Комерційний Екаунт</div>
+                <div class="testi-stars">★★★★★</div>
+                <div class="testi-date">4 місяці тому · Google</div>
+              </div>
+            </div>
+          </div>
+
+          <div class="testi-card reveal stagger-2">
+            <span class="testi-quote">"</span>
+            <p class="testi-text">
+              Чудова клініка. Юрій Васильович найкращий лікар — швидко знайшов
+              причину частого захворювання донечки. Ми дуже раді, що потрапили
+              саме до нього!
+            </p>
+            <div class="testi-footer">
+              <div class="testi-avatar">ОЛ</div>
+              <div>
+                <div class="testi-name">Оксана Левчук</div>
+                <div class="testi-stars">★★★★★</div>
+                <div class="testi-date">4 місяці тому · Google</div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- FAQ -->
+    <section id="faq">
+      <div class="faq-layout">
+        <div class="faq-sticky reveal-left">
+          <div class="section-eyebrow">Часті запитання</div>
+          <h2 class="section-title">Маєте<br /><em>питання?</em></h2>
+          <p class="section-sub" style="margin-top: 10px">
+            Знайдіть відповідь нижче або телефонуйте нам.
+          </p>
+          <div class="faq-visual" style="margin-top: 28px">
+            <div
+              style="
+                font-size: 11px;
+                letter-spacing: 0.1em;
+                text-transform: uppercase;
+                color: var(--muted);
+                margin-bottom: 18px;
+              "
+            >
+              Оцінки пацієнтів
+            </div>
+            <div class="fvs-row">
+              <span class="fvs-lbl">Якість лікування</span>
+              <div class="fvs-bar">
+                <div class="fvs-fill" style="width: 96%"></div>
+              </div>
+              <span class="fvs-val">96%</span>
+            </div>
+            <div class="fvs-row">
+              <span class="fvs-lbl">Ввічливість персоналу</span>
+              <div class="fvs-bar">
+                <div class="fvs-fill" style="width: 98%"></div>
+              </div>
+              <span class="fvs-val">98%</span>
+            </div>
+            <div class="fvs-row">
+              <span class="fvs-lbl">Час очікування</span>
+              <div class="fvs-bar">
+                <div class="fvs-fill" style="width: 90%"></div>
+              </div>
+              <span class="fvs-val">90%</span>
+            </div>
+            <div class="fvs-row" style="margin-bottom: 0">
+              <span class="fvs-lbl">Зручність запису</span>
+              <div class="fvs-bar">
+                <div class="fvs-fill" style="width: 95%"></div>
+              </div>
+              <span class="fvs-val">95%</span>
+            </div>
+          </div>
+        </div>
+        <div class="faq-items reveal-right">
+          <div class="faq-item">
+            <button class="faq-q" onclick="toggleFaq(this)">
+              Як записатись на прийом?
+              <div class="faq-icon-btn">+</div>
+            </button>
+            <div class="faq-a">
+              <div class="faq-a-inner">
+                Записатись можна онлайн на сайті bookon.ua/s/dobrolikar_clinic,
+                зателефонувавши за номером +38 (093) 930-73-74, або звернувшись
+                особисто за адресою: м. Львів, вул. Янева, 25.
+              </div>
+            </div>
+          </div>
+          <div class="faq-item">
+            <button class="faq-q" onclick="toggleFaq(this)">
+              Чи приймаєте ви дітей?
+              <div class="faq-icon-btn">+</div>
+            </button>
+            <div class="faq-a">
+              <div class="faq-a-inner">
+                Так, клініка надає послуги пацієнтам усіх вікових груп. У нас є
+                дитячий ЛОР, офтальмолог, алерголог та сурдолог. Для маленьких
+                пацієнтів передбачена комфортна атмосфера прийому.
+              </div>
+            </div>
+          </div>
+          <div class="faq-item">
+            <button class="faq-q" onclick="toggleFaq(this)">
+              Яке обладнання використовується?
+              <div class="faq-icon-btn">+</div>
+            </button>
+            <div class="faq-a">
+              <div class="faq-a-inner">
+                Клініка оснащена сучасним діагностичним обладнанням для
+                офтальмології, ЛОР-діагностики, аудіометрії та алерготестування.
+                Використовуємо лише сертифіковані апарати провідних виробників.
+              </div>
+            </div>
+          </div>
+          <div class="faq-item">
+            <button class="faq-q" onclick="toggleFaq(this)">
+              Чи потрібне направлення?
+              <div class="faq-icon-btn">+</div>
+            </button>
+            <div class="faq-a">
+              <div class="faq-a-inner">
+                Ні, направлення не потрібне. Ви можете самостійно звернутись до
+                будь-якого нашого фахівця. Якщо є направлення від лікаря — це
+                пришвидшить консультацію.
+              </div>
+            </div>
+          </div>
+          <div class="faq-item">
+            <button class="faq-q" onclick="toggleFaq(this)">
+              Які форми оплати ви приймаєте?
+              <div class="faq-icon-btn">+</div>
+            </button>
+            <div class="faq-a">
+              <div class="faq-a-inner">
+                Готівка, банківські картки Visa/Mastercard, Apple Pay, Google
+                Pay. Також можлива оплата частинами.
+              </div>
+            </div>
+          </div>
+          <div class="faq-item">
+            <button class="faq-q" onclick="toggleFaq(this)">
+              Де знаходиться клініка?
+              <div class="faq-icon-btn">+</div>
+            </button>
+            <div class="faq-a">
+              <div class="faq-a-inner">
+                Адреса: м. Львів, вул. Янева, 25. Зручне розташування в
+                центральній частині міста, поруч із зупинками громадського
+                транспорту.
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- CTA -->
+    <div class="cta-band reveal-scale" id="appointment">
+      <div class="cta-title">
+        Готові записатись?<br /><em>Працюємо щодня</em> для вас
+      </div>
+      <div class="cta-actions">
+        <a
+          href="https://bookon.ua/s/dobrolikar_clinic"
+          target="_blank"
+          class="btn-primary"
+          >Забронювати прийом</a
+        >
+        <a
+          href="tel:+380939307374"
+          class="btn-ghost"
+          style="
+            color: var(--dark);
+            background: rgba(15, 35, 64, 0.08);
+            border-color: rgba(15, 35, 64, 0.18);
+          "
+          >+38 (093) 930-73-74</a
+        >
+      </div>
+    </div>
+
+    <!-- CONTACT -->
+    <section id="contact">
+      <div class="reveal">
+        <div class="section-eyebrow">Завітайте до нас</div>
+        <h2 class="section-title">Наші <em>контакти</em></h2>
+      </div>
+      <div class="contact-grid">
+        <div class="contact-info-block reveal-left">
+          <h3>Контакти</h3>
           <p><strong>Адреса:</strong> м. Львів, вул. Янева, 25</p>
           <p>
             <strong>Телефон:</strong>
-            <a href="tel:+380931234567">+38 (093) 930-73-74</a>
+            <a href="tel:+380939307374">+38 (093) 930-73-74</a>
           </p>
           <p>
             <strong>Email:</strong>
             <a href="mailto:info@dobrolikar.ua">info@dobrolikar.ua</a>
           </p>
-
-          <h3>Графік роботи:</h3>
-          <p>Пн-Пт: 8:00 - 20:00</p>
-          <p>Сб: 9:00 - 18:00</p>
-          <p>Нд: 10:00 - 16:00</p>
+          <h3>Графік роботи</h3>
+          <div class="hours-row">
+            <span class="hours-day">Понеділок – П'ятниця</span
+            ><span class="hours-time">8:00 – 20:00</span>
+          </div>
+          <div class="hours-row">
+            <span class="hours-day">Субота</span
+            ><span class="hours-time">9:00 – 18:00</span>
+          </div>
+          <div class="hours-row">
+            <span class="hours-day">Неділя</span
+            ><span class="hours-time">10:00 – 16:00</span>
+          </div>
         </div>
-        <div class="contact-image">
-          <img
-            src="images/personal.JPG"
-            alt="Команда Добролікар"
-            class="contact-image__desktop"
-          />
-          <img
-            src="images/personal_1.JPG"
-            alt="Команда Добролікар"
-            class="contact-image__mobile"
-          />
+        <div class="contact-photo-block reveal-right">
+          <img src="images/welcome-footer.JPG" alt="Команда Добролікар" />
+          <div class="contact-photo-overlay">
+            <p>«Тут добрі лікарі!»</p>
+          </div>
         </div>
       </div>
     </section>
 
-    <!-- Footer -->
+    <!-- FOOTER -->
     <footer>
-      <div class="footer-content">
-        <div class="footer-column">
-          <h3>Добролікар</h3>
-          <p>Медичний центр для дітей та дорослих</p>
-          <ul class="footer-services">
-            <li>Отоларинголог (ЛОР)</li>
-            <li>Офтальмолог</li>
-            <li>Сурдолог</li>
-            <li>Алерголог</li>
-          </ul>
-          <h3>Тут добрі лікарі!</h3>
+      <div class="footer-grid">
+        <div>
+          <img class="footer-logo" src="images/logo-mid.png" alt="Добролікар" />
+          <p class="footer-tagline">
+            Медичний центр для дітей та дорослих.
+            <br />
+            Львів, вул. Янева, 25.
+          </p>
         </div>
-
-        <div class="footer-column">
-          <h3>Меню</h3>
+        <div>
+          <div class="footer-col-title">Послуги</div>
           <ul class="footer-links">
-            <li><a href="#services">Послуги</a></li>
-            <li><a href="#about">Про нас</a></li>
+            <li><a href="#services">Офтальмологія</a></li>
+            <li><a href="#services">Отоларингологія</a></li>
+            <li><a href="#services">Алергологія</a></li>
+            <li><a href="#services">Сурдологія</a></li>
+            <li><a href="#services">Оптика</a></li>
+          </ul>
+        </div>
+        <div>
+          <div class="footer-col-title">Клініка</div>
+          <ul class="footer-links">
             <li><a href="#team">Лікарі</a></li>
             <li><a href="#testimonials">Відгуки</a></li>
+            <li><a href="#faq">FAQ</a></li>
             <li><a href="#contact">Контакти</a></li>
           </ul>
         </div>
+        <div>
+          <div class="footer-col-title">Контакти</div>
+          <ul class="footer-links">
+            <li><a href="#">вул. Янева, 25, Львів</a></li>
+            <li><a href="tel:+380939307374">+38 (093) 930-73-74</a></li>
+            <li>
+              <a href="mailto:info@dobrolikar.ua">info@dobrolikar.ua</a>
+            </li>
+            <li><a href="#">Пн–Пт: 8:00–20:00</a></li>
+            <li><a href="#">Сб: 9:00–18:00 · Нд: 10:00–16:00</a></li>
+          </ul>
+        </div>
       </div>
-      <div class="copyright">
-        <p>&copy; 2025 Добролікар. Всі права захищені.</p>
+      <div class="footer-bottom">
+        <span>© 2025 Добролікар. Всі права захищені.</span>
+        <span>Приватність · Умови використання</span>
       </div>
     </footer>
-
-    <script>
-      // Mobile menu toggle
-      document
-        .querySelector(".menu-btn")
-        .addEventListener("click", function () {
-          this.classList.toggle("active");
-          document.querySelector(".nav-links").classList.toggle("active");
-          document.querySelector(".sidebar-overlay").classList.toggle("active");
-          document.body.classList.toggle("sidebar-open");
-        });
-
-      // Close sidebar when clicking overlay
-      document
-        .querySelector(".sidebar-overlay")
-        .addEventListener("click", function () {
-          document.querySelector(".menu-btn").classList.remove("active");
-          document.querySelector(".nav-links").classList.remove("active");
-          document.querySelector(".sidebar-overlay").classList.remove("active");
-          document.body.classList.remove("sidebar-open");
-        });
-
-      // Smooth scrolling for anchor links
-      document.querySelectorAll('a[href^="#"]').forEach((anchor) => {
-        anchor.addEventListener("click", function (e) {
-          e.preventDefault();
-          const target = document.querySelector(this.getAttribute("href"));
-          if (target) {
-            window.scrollTo({
-              top: target.offsetTop - 80,
-              behavior: "smooth",
-            });
-
-            // Close mobile menu if open
-            document.querySelector(".menu-btn").classList.remove("active");
-            document.querySelector(".nav-links").classList.remove("active");
-            document
-              .querySelector(".sidebar-overlay")
-              .classList.remove("active");
-            document.body.classList.remove("sidebar-open");
-          }
-        });
-      });
-    </script>
-    <!-- <script src="js/loadContent.js"></script> -->
   </body>
 </html>
