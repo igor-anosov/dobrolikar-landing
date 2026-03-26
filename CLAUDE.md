@@ -1,6 +1,6 @@
 # CLAUDE.md
 
-This file provides guidance to Claude Code (claude.ai/code) when working with code in this repository.
+This file describes the structure, design system and rules for working with the landing page of the "Dobrolikar" medical center. Read it before making any changes to the files.
 
 ## Frontend Aesthetics
 
@@ -67,13 +67,13 @@ fonts/              # Custom Evolventa font family (regular, bold, italic varian
 
 ### Key Sections
 
-- **Hero** - Full-width banner with booking CTA (external link to bookon.ua)
-- **Services** - 6-column responsive grid (Optyka, Ophthalmology, Hearing aids, Audiology, ENT, Allergology)
-- **About** - Bento grid layout (added recently, check git history for implementation pattern)
-- **Team** - 4 doctors with circular portrait images
-- **Testimonials** - 3 patient reviews with star ratings
-- **Contact** - Address, phone, hours, booking link
-- **Footer** - Quick navigation and service list
+- **Hero** (`#hero`) - Full-width banner with background image, eyebrow text, main title, description, CTA buttons, and stats cards
+- **Services** (`#services`) - Responsive grid with service cards (Optyka, Ophthalmology, Hearing aids, Audiology, ENT, Allergology)
+- **Team** (`#team`) - Banner with doctors' gallery; includes team-banner section and team-grid for individual doctor cards
+- **Testimonials** (`#testimonials`) - Patient reviews with star ratings and images
+- **FAQ** (`#faq`) - Sticky FAQ section on the left with expandable questions
+- **Contact** (`#contact`) - Address, phone, hours, embedded map, booking link
+- **Footer** - Navigation links and service list
 
 ### Responsive Breakpoints
 
@@ -83,23 +83,27 @@ fonts/              # Custom Evolventa font family (regular, bold, italic varian
 
 ### Navigation
 
-- Desktop: Horizontal nav with smooth scroll anchors
-- Mobile: Right-side slide-out menu with overlay (hamburger button)
-- Smooth scroll to sections with 80px offset for fixed header
+- **Desktop**: Fixed horizontal navbar with logo, nav links (Послуги, Лікарі, Відгуки, FAQ, Контакти), booking button
+- **Mobile**: Hidden by default; hamburger button (`#hamburger`) toggles `.mobile-menu` slide-out overlay on the right side
+- **Features**:
+  - Smooth scroll to anchor sections (hash links with `#`)
+  - Nav background transitions on scroll: transparent → semi-transparent glassmorphic
+  - Scroll offset handled by CSS (check section padding/margins)
+  - Toggle functions: `toggleMenu()` and `closeMenu()` (inline in HTML)
 
 ## Google Sheets Integration
 
-**To enable:**
+**Current Status:** Not enabled. Content is hardcoded in HTML.
+
+**To enable (if needed in future):**
 
 1. Follow `GOOGLE_SHEETS_SETUP.md` to create spreadsheet and get API credentials
 2. Add `SHEET_ID` and `API_KEY` to `js/loadContent.js` (lines 2-3)
-3. Uncomment `<script src="js/loadContent.js"></script>` in `index.html` (line 420)
-
-**To disable:**
-Keep the script tag commented out (current state). Content will use hardcoded HTML values.
+3. Add `<script src="js/loadContent.js"></script>` before closing `</body>` tag in `index.html`
+4. Ensure HTML elements have matching IDs (e.g., `id="hero-title"` for spreadsheet `field_id="hero_title"`)
 
 **Cache management:**
-Cached content is stored in `localStorage` with key `dobrolikar_content`. To force fresh fetch, clear localStorage or wait 1 hour.
+If enabled, cached content is stored in `localStorage` with key `dobrolikar_content`. To force fresh fetch, clear localStorage or wait 1 hour.
 
 ## Images
 
@@ -114,12 +118,24 @@ All images are in `/images/` directory:
 
 ## Styling
 
-- CSS uses CSS custom properties (variables) for colors: `--primary-color`, `--secondary-color`, `--text-dark`, etc.
-- Font family: Custom "Evolventa" with fallback to system fonts
-- Gradients use primary (blue #1a5f7a) → secondary (green #2ecc71) color scheme
-- Box shadows defined in variables: `--shadow`, `--shadow-hover`
+- **CSS Variables** (`:root`):
+  - Colors: `--teal` (#0a9e9e), `--teal-light` (#12d4c8), `--teal-glow` (#5de8e0), `--dark` (#0f2340), `--dark-mid` (#1a3a5c), `--muted` (#4a6a8a), `--light` (#e8eef4), `--white` (#ffffff)
+  - Glass effects: `--glass-white` (rgba 0.55), `--glass-border` (rgba 0.7)
+  - Shadows: `--shadow` (0 8px 40px), `--shadow-lg` (0 20px 60px)
+- **Font family**: Custom "Evolventa" (Regular, Bold, Italic) with fallbacks to "Outfit" and system sans-serif
+- **Color scheme**: Teal (#0a9e9e) accent with dark navy backgrounds (#0f2340), light background (#e8eef4)
+- **Background**: Mesh gradient effect with fixed positioned `.bg-mesh` and noise overlay `.bg-noise`
+- **Effects**: Glassmorphism (backdrop-filter blur), animated reveals on scroll (IntersectionObserver), smooth scroll behavior
+
+## JavaScript
+
+All JavaScript is in `main.js`) inside 'js/' folder:
+
+- **Mobile menu toggle**: `toggleMenu()` and `closeMenu()` functions control `.mobile-menu` visibility
+- **Scroll reveal animations**: IntersectionObserver watches elements with classes `.reveal`, `.reveal-left`, `.reveal-right`, `.reveal-scale` and adds `.visible` class when they enter viewport (threshold: 0.06)
+- **Navigation scroll effect**: On scroll, nav background transitions: `scrollY > 60` → semi-transparent, else transparent
+- **Initialization**: Reveal effects run on DOMContentLoaded and window load to handle initial viewport visibility and image loading
 
 ## Git Workflow
 
-Current branch: `main`
-Recent work includes bento grid layout implementation and Google Sheets integration setup.
+Static site - no build process, immediate preview on file changes.
