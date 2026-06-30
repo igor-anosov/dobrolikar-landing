@@ -27,7 +27,7 @@ function toggleFaq(btn) {
 function initReveal() {
   var els = Array.from(
     document.querySelectorAll(
-      ".reveal,.reveal-left,.reveal-right,.reveal-scale"
+      ".reveal,.reveal-left,.reveal-right,.reveal-scale,.reveal-door"
     )
   );
 

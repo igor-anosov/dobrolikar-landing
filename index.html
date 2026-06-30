@@ -19,6 +19,7 @@
     <meta name="author" content="Медичний центр Добролікар" />
     <meta name="robots" content="index, follow" />
     <meta name="theme-color" content="#0a9e9e" />
+    <link rel="icon" href="images/dobrolikar_logo.png" type="image/png" />
     <link rel="canonical" href="https://dobrolikar.com.ua/" />
 
     <!-- Open Graph -->
@@ -91,20 +92,20 @@
               "Thursday",
               "Friday"
             ],
-            "opens": "08:00",
-            "closes": "20:00"
+            "opens": "09:00",
+            "closes": "19:00"
           },
           {
             "@type": "OpeningHoursSpecification",
             "dayOfWeek": "Saturday",
             "opens": "09:00",
-            "closes": "18:00"
+            "closes": "17:00"
           },
           {
             "@type": "OpeningHoursSpecification",
             "dayOfWeek": "Sunday",
-            "opens": "10:00",
-            "closes": "16:00"
+            "opens": "00:00",
+            "closes": "00:00"
           }
         ],
         "medicalSpecialty": [
@@ -115,8 +116,8 @@
         ],
         "aggregateRating": {
           "@type": "AggregateRating",
-          "ratingValue": "5.0",
-          "reviewCount": "350",
+          "ratingValue": "4.9",
+          "reviewCount": "350+",
           "bestRating": "5"
         },
         "sameAs": ["https://bookon.ua/s/dobrolikar_clinic"]
@@ -176,19 +177,12 @@
         <a
           href="https://bookon.ua/s/dobrolikar_clinic"
           target="_blank"
-          class="btn-primary"
-          style="text-align: center"
+          class="btn-primary mobile-menu-cta-btn"
           >Записатись на прийом ↗</a
         >
         <a
           href="tel:+380939307374"
-          class="btn-ghost"
-          style="
-            text-align: center;
-            color: var(--dark);
-            background: rgba(15, 35, 64, 0.07);
-            border-color: rgba(15, 35, 64, 0.18);
-          "
+          class="btn-ghost btn-ghost-dark"
           >+38 (093) 930-73-74</a
         >
       </div>
@@ -276,14 +270,7 @@
             </div>
           </div>
           <div class="float-card card-badge">
-            <div
-              class="badge-row"
-              style="
-                margin-bottom: 14px;
-                padding-bottom: 14px;
-                border-bottom: 1px solid rgba(255, 255, 255, 0.25);
-              "
-            >
+            <div class="badge-row badge-row-bordered">
               <div class="badge-icon">
                 <svg
                   width="20"
@@ -316,18 +303,11 @@
               </div>
             </div>
             <div class="badge-row">
-              <div
-                style="
-                  font-size: 14px;
-                  letter-spacing: 2px;
-                  color: #fbbf24;
-                  margin-right: 10px;
-                "
-              >
+              <div class="badge-stars">
                 ★★★★★
               </div>
               <div>
-                <div class="badge-val" style="font-size: 18px">4.9</div>
+                <div class="badge-val badge-val-sm">4.9</div>
                 <div class="badge-lbl">Рейтинг Google</div>
               </div>
             </div>
@@ -535,6 +515,7 @@
           class="team-banner-img"
           src="images/personal_1.JPG"
           alt="Команда Добролікар"
+          loading="lazy"
         />
         <div class="team-banner-overlay"></div>
         <div class="team-banner-text">
@@ -899,25 +880,79 @@
       </div>
     </section>
 
+    <!-- KIDS -->
+    <section class="kids-section" id="kids">
+      <div class="kids-layout">
+        <div class="kids-content reveal-left">
+          <div class="section-eyebrow">Для маленьких пацієнтів</div>
+          <h2 class="section-title">Клініка, де діти <em>не бояться</em> лікарів</h2>
+          <p class="kids-desc">
+            У «Добролікарі» ми створили атмосферу, в якій дитина почувається спокійно та безпечно. Наші лікарі мають особливий підхід до маленьких пацієнтів — без стресу, з терпінням та турботою.
+          </p>
+          <div class="kids-features">
+            <div class="kids-feature">
+              <div class="kids-feature-icon">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round">
+                  <path d="M20.84 4.61a5.5 5.5 0 0 0-7.78 0L12 5.67l-1.06-1.06a5.5 5.5 0 0 0-7.78 7.78L12 21.23l8.84-8.84a5.5 5.5 0 0 0 0-7.78z"/>
+                </svg>
+              </div>
+              <div>
+                <div class="kids-feature-title">Дружня атмосфера</div>
+                <div class="kids-feature-text">Ігрова зона та привітний персонал допомагають дитині розслабитись</div>
+              </div>
+            </div>
+            <div class="kids-feature">
+              <div class="kids-feature-icon">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round">
+                  <path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/>
+                </svg>
+              </div>
+              <div>
+                <div class="kids-feature-title">Безболісна діагностика</div>
+                <div class="kids-feature-text">Сучасне обладнання дозволяє проводити огляд швидко та без дискомфорту</div>
+              </div>
+            </div>
+            <div class="kids-feature">
+              <div class="kids-feature-icon">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round">
+                  <path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"/>
+                  <circle cx="9" cy="7" r="4"/>
+                  <path d="M23 21v-2a4 4 0 0 0-3-3.87"/>
+                  <path d="M16 3.13a4 4 0 0 1 0 7.75"/>
+                </svg>
+              </div>
+              <div>
+                <div class="kids-feature-title">Сімейний підхід</div>
+                <div class="kids-feature-text">Консультуємо батьків та дітей разом — для кращого результату лікування</div>
+              </div>
+            </div>
+          </div>
+          <a href="https://bookon.ua/s/dobrolikar_clinic" target="_blank" class="btn-primary">Записати дитину ↗</a>
+        </div>
+        <div class="kids-media reveal-right">
+          <div class="kids-video-wrap">
+            <video autoplay muted loop playsinline>
+              <source src="images/dobrolikar_kids_emiliia_playing_compressed.mp4" type="video/mp4" />
+            </video>
+            <div class="kids-video-overlay"></div>
+          </div>
+          <img src="images/dobrolikar_kids_4.jpeg" alt="Дитина на прийомі" class="kids-float kids-float-tl" loading="lazy" />
+          <img src="images/dobrolikar_kids_3.JPG" alt="Маленький пацієнт" class="kids-float kids-float-br" loading="lazy" />
+        </div>
+      </div>
+    </section>
+
     <!-- FAQ -->
     <section id="faq">
       <div class="faq-layout">
         <div class="faq-sticky reveal-left">
           <div class="section-eyebrow">Часті запитання</div>
           <h2 class="section-title">Маєте<br /><em>питання?</em></h2>
-          <p class="section-sub" style="margin-top: 10px">
+          <p class="section-sub faq-sub">
             Знайдіть відповідь нижче або телефонуйте нам.
           </p>
-          <div class="faq-visual" style="margin-top: 28px">
-            <div
-              style="
-                font-size: 11px;
-                letter-spacing: 0.1em;
-                text-transform: uppercase;
-                color: var(--muted);
-                margin-bottom: 18px;
-              "
-            >
+          <div class="faq-visual">
+            <div class="faq-visual-title">
               Оцінки пацієнтів
             </div>
             <div class="fvs-row">
@@ -941,7 +976,7 @@
               </div>
               <span class="fvs-val">90%</span>
             </div>
-            <div class="fvs-row" style="margin-bottom: 0">
+            <div class="fvs-row fvs-row-last">
               <span class="fvs-lbl">Зручність запису</span>
               <div class="fvs-bar">
                 <div class="fvs-fill" style="width: 95%"></div>
@@ -1052,12 +1087,7 @@
         >
         <a
           href="tel:+380939307374"
-          class="btn-ghost"
-          style="
-            color: var(--dark);
-            background: rgba(15, 35, 64, 0.08);
-            border-color: rgba(15, 35, 64, 0.18);
-          "
+          class="btn-ghost btn-ghost-dark"
           >+38 (093) 930-73-74</a
         >
       </div>
@@ -1091,8 +1121,8 @@
             ><span class="hours-time">Вихідний</span>
           </div>
         </div>
-        <div class="contact-photo-block reveal-right">
-          <img src="images/welcome-footer.JPG" alt="Команда Добролікар" />
+        <div class="contact-photo-block reveal-door">
+          <img src="images/welcome-footer.JPG" alt="Команда Добролікар" loading="lazy" />
           <div class="contact-photo-overlay">
             <p>«Тут добрі лікарі!»</p>
           </div>
@@ -1104,7 +1134,7 @@
     <footer>
       <div class="footer-grid">
         <div>
-          <img class="footer-logo" src="images/logo-mid.png" alt="Добролікар" />
+          <img class="footer-logo" src="images/logo-mid.png" alt="Добролікар" loading="lazy" />
           <p class="footer-tagline">
             Медичний центр для дітей та дорослих.
             <br />
