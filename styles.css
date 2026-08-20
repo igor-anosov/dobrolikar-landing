@@ -1015,7 +1015,7 @@ section {
   box-shadow: var(--shadow-lg);
 }
 .doctor-photo {
-  height: 180px;
+  height: 215px;
   background: linear-gradient(
     160deg,
     rgba(10, 158, 158, 0.22),
